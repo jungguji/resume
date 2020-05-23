@@ -1,7 +1,7 @@
 {
   "name": "resume",
-  "lastestUpdatedAt": "2020-05-23",
-  "version": "1.0.3",
+  "lastestUpdatedAt": "2020-04-23",
+  "version": "1.0.2",
   "description": "Static HTML based RESUME made with next.js",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
     "preexport": "npm run clean && npm run build",
     "postexport": "node shellwork.js",
     "clean": "npx rimraf docs .next",
-    "lint": "eslint 'component/**/*' 'pages/**/*' 'payload/**/*' '*.ts' --fix",
+    "lint": "eslint component/**/* pages/**/* payload/**/* *.ts --fix",
     "typedoc": "typedoc --excludeExternals"
   },
   "homepage": "https://jungguji.github.io/resume/",
