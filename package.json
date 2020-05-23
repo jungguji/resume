@@ -1,12 +1,12 @@
 {
-  "name": "resume-nextjs",
-  "lastestUpdatedAt": "2020-04-12",
+  "name": "resume",
+  "lastestUpdatedAt": "2020-05-23",
   "version": "1.0.3",
   "description": "Static HTML based RESUME made with next.js",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "cross-env DEBUG=yosume:* next",
+    "dev": "next",
     "build": "next build",
     "prebuild": "npm install && npm run lint",
     "start": "next start",
@@ -18,10 +18,10 @@
     "lint": "eslint 'component/**/*' 'pages/**/*' 'payload/**/*' '*.ts' --fix",
     "typedoc": "typedoc --excludeExternals"
   },
-  "homepage": "https://uyu423.github.io/resume-nextjs",
+  "homepage": "https://jungguji.github.io/resume/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uyu423/resume-nextjs.git"
+    "url": "git+https://github.com/jungguji/resume.git"
   },
   "keywords": [
     "resume",
@@ -34,7 +34,7 @@
   "contributors": [],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/uyu423/resume-nextjs/issues"
+    "url": "https://github.com/jungguji/resume/issues"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
