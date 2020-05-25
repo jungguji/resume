@@ -4,28 +4,20 @@ const backend: ISkill.Skill = {
   category: 'Back-end',
   items: [
     {
-      title: 'Node.js',
+      title: 'Java',
       level: 3,
     },
     {
-      title: 'AWS',
-      level: 3,
-    },
-    {
-      title: 'PHP',
+      title: 'Spring-Boot',
       level: 2,
     },
     {
-      title: 'Java',
-      level: 1,
+      title: 'Mybatis',
+      level: 2,
     },
     {
-      title: 'Python',
-      level: 1,
-    },
-    {
-      title: 'C/C++',
-      level: 1,
+      title: 'Hibernate',
+      level: 2,
     },
   ],
 };
@@ -35,18 +27,22 @@ const database: ISkill.Skill = {
   items: [
     {
       title: 'MySQL',
-      level: 3,
+      level: 2,
+    },
+    {
+      title: 'MariaDB',
+      level: 2,
     },
     {
       title: 'Oracle',
       level: 2,
     },
     {
-      title: 'Redis',
+      title: 'MSSQL',
       level: 2,
     },
     {
-      title: 'MongoDB',
+      title: 'PostgreSQL',
       level: 1,
     },
   ],
@@ -56,51 +52,56 @@ const frontend: ISkill.Skill = {
   category: 'Front-end',
   items: [
     {
-      title: 'Next.js',
-      level: 2,
-    },
-    {
-      title: 'React.js',
-      level: 2,
-    },
-    {
-      title: 'javascript',
+      title: 'Javascript',
       level: 2,
     },
     {
       title: 'HTML/CSS',
       level: 2,
     },
+    {
+      title: 'Thymeleaf',
+      level: 2,
+    },
+    {
+      title: 'jQuery',
+      level: 2,
+    },
   ],
 };
+
+const cloud: ISkill.Skill = {
+  category: 'Cloud',
+  items: [
+    {
+      title: 'Heroku',
+      level: 1,
+    },
+  ],
+};
+
 
 const etc: ISkill.Skill = {
   category: 'Etc',
   items: [
     {
-      title: 'Ubuntu',
+      title: 'Redmine',
     },
     {
-      title: 'Vim',
+      title: 'SVN',
     },
     {
-      title: 'Security',
+      title: 'Git / Github',
     },
     {
       title: 'VS Code',
-    },
-    {
-      title: 'Jira',
-    },
-    {
-      title: 'Confluence',
     },
   ],
 };
 
 const skill: ISkill.Payload = {
   disable: false,
-  skills: [backend, database, frontend, etc],
+  skills: [backend, database, frontend, cloud, etc],
   tooltip: '1: 기초 수준\n2: 취미 개발 수준\n3: Production 개발 가능 수준',
 };
 

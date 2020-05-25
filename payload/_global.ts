@@ -1,9 +1,9 @@
 import favicon from '../asset/favicon.ico';
-import previewImage from '../asset/preview.jpg';
+import previewImage from '../asset/JGJI.jpg';
 import { IGlobal } from '../component/common/IGlobal';
 
-const title = 'RESUME-NEXTJS Sample Page';
-const description = 'This is a simple web resume sample.';
+const title = '지중구 이력서';
+const description = '';
 
 export const _global: IGlobal.Payload = {
   favicon,
@@ -19,15 +19,15 @@ export const _global: IGlobal.Payload = {
           url: previewImage,
           width: 800,
           height: 600,
-          alt: 'OpenGraph Image Sample.png',
+          alt: '증명 사진',
         },
       ],
       type: 'profile',
       profile: {
-        firstName: 'Lorem',
-        lastName: 'ipsum',
-        username: 'lorem',
-        gender: 'femail',
+        firstName: 'Jung gu',
+        lastName: 'Ji',
+        username: 'junggu.ji.dev',
+        gender: 'male',
       },
     },
   },

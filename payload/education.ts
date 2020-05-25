@@ -5,16 +5,16 @@ const education: IEducation.Payload = {
 
   list: [
     {
-      title: 'Foo University',
-      subTitle: 'Bar Major Bachelor',
-      startedAt: '2010-03',
-      endedAt: '2016-08',
+      title: '국가평생교육진흥원 학점은행제',
+      subTitle: '컴퓨터공학 전공(학사)',
+      startedAt: '2018-03',
+      endedAt: '2018-03',
     },
     {
-      title: 'Foo High School',
-      subTitle: 'Graduated',
-      startedAt: '2007-03',
-      endedAt: '2010-02',
+      title: '경민대학교',
+      subTitle: '인터넷정보 전공(전문학사)',
+      startedAt: '2012-02',
+      endedAt: '2017-02',
     },
   ],
 };
