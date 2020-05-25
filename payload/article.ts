@@ -9,9 +9,8 @@ const article: IArticle.Payload = {
       href: 'https://jungguji.github.io/2020/05/05/ajax-content-type-error/',
     },
     {
-      content: "(2020. 04. 15) Spring boot + thymeleaf custom error page 적용",
-      href:
-        'https://jungguji.github.io/2020/04/15/custom-error-page/',
+      content: '(2020. 04. 15) Spring boot + thymeleaf custom error page 적용',
+      href: 'https://jungguji.github.io/2020/04/15/custom-error-page/',
     },
   ],
 };

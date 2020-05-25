@@ -80,7 +80,6 @@ const cloud: ISkill.Skill = {
   ],
 };
 
-
 const etc: ISkill.Skill = {
   category: 'Etc',
   items: [
