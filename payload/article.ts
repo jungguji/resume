@@ -5,7 +5,7 @@ const article: IArticle.Payload = {
 
   list: [
     {
-      content: '(2020. 05. 05)Ajax http status 415 Unsupported Media Type',
+      content: '(2020. 05. 05) Ajax http status 415 Unsupported Media Type',
       href: 'https://jungguji.github.io/2020/05/05/ajax-content-type-error/',
     },
     {

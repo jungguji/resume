@@ -13,6 +13,10 @@ const openSource: IOpenSource.Payload = {
         { content: 'Owner & Maintainer' },
         { content: 'Spring boot, RESTful-API, Kakao-API' },
         {
+          content: 'https://give-me-a-mask.herokuapp.com/',
+          href: 'https://give-me-a-mask.herokuapp.com/',
+        },
+        {
           content: 'https://github.com/jungguji/give-me-a-mask',
           href: 'https://github.com/jungguji/give-me-a-mask',
         },
@@ -31,6 +35,10 @@ const openSource: IOpenSource.Payload = {
         { content: '오픈소스인 JUI Framework를 활용해 Grid와 Chart 기능 개발' },
         { content: 'Owner & Maintainer' },
         { content: 'Spring boot, Hibernate, thymeleaf' },
+        {
+          content: 'https://wordbooks.herokuapp.com/',
+          href: 'https://wordbooks.herokuapp.com/',
+        },
         {
           content: 'https://github.com/jungguji/wordbook',
           href: 'https://github.com/jungguji/wordbook',
