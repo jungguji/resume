@@ -61,7 +61,7 @@ const frontend: ISkill.Skill = {
     },
     {
       title: 'Thymeleaf',
-      level: 2,
+      level: 1,
     },
     {
       title: 'jQuery',
@@ -75,6 +75,10 @@ const cloud: ISkill.Skill = {
   items: [
     {
       title: 'Heroku',
+      level: 1,
+    },
+    {
+      title: 'AWS',
       level: 1,
     },
   ],
@@ -94,6 +98,9 @@ const etc: ISkill.Skill = {
     },
     {
       title: 'VS Code',
+    },
+    {
+      title: 'Travis CI',
     },
   ],
 };
