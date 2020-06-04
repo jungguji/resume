@@ -33,7 +33,7 @@ const openSource: IOpenSource.Payload = {
             '유저 마다 당일 시험봐야 하는 단어 검색해서 시험보게 하고 틀린 단어는 새로 insert',
         },
         { content: '오픈소스인 JUI Framework를 활용해 Grid와 Chart 기능 개발' },
-        { content: 'AWS EC2 + travis CI를 통한 자동 빌드/배포'}
+        { content: 'AWS EC2 + travis CI를 통한 자동 빌드/배포' },
         { content: 'Owner & Maintainer' },
         { content: 'Spring boot, Hibernate, AWS, Travis CI' },
         {
