@@ -4,25 +4,6 @@ const openSource: IOpenSource.Payload = {
   disable: false,
   list: [
     {
-      title: 'Give me a mask',
-      descriptions: [
-        { content: '주소를 입력받고 지도에 주변 공적 마스크 판매처 표시' },
-        { content: '카카오 우편 서비스를 활용해 주소 검색 서비스 제공' },
-        { content: '심평원에서 제공하는 데이터를 RESTful API를 이용해 가져옴' },
-        { content: '데이터를 카카오 MAP API를 이용해 가까운 순으로 Map에 마킹해서 보여줌' },
-        { content: 'Owner & Maintainer' },
-        { content: 'Spring boot, RESTful-API, Kakao-API' },
-        {
-          content: 'https://give-me-a-mask.herokuapp.com/',
-          href: 'https://give-me-a-mask.herokuapp.com/',
-        },
-        {
-          content: 'https://github.com/jungguji/give-me-a-mask',
-          href: 'https://github.com/jungguji/give-me-a-mask',
-        },
-      ],
-    },
-    {
       title: '단어장',
       descriptions: [
         { content: '자신이 공부한 단어를 입력받아 저장하고 망각곡선 주기에 맞춰 시험보게 함' },
@@ -43,6 +24,25 @@ const openSource: IOpenSource.Payload = {
         {
           content: 'https://github.com/jungguji/wordbook',
           href: 'https://github.com/jungguji/wordbook',
+        },
+      ],
+    },
+    {
+      title: 'Give me a mask',
+      descriptions: [
+        { content: '주소를 입력받고 지도에 주변 공적 마스크 판매처 표시' },
+        { content: '카카오 우편 서비스를 활용해 주소 검색 서비스 제공' },
+        { content: '심평원에서 제공하는 데이터를 RESTful API를 이용해 가져옴' },
+        { content: '데이터를 카카오 MAP API를 이용해 가까운 순으로 Map에 마킹해서 보여줌' },
+        { content: 'Owner & Maintainer' },
+        { content: 'Spring boot, RESTful-API, Kakao-API' },
+        {
+          content: 'https://give-me-a-mask.herokuapp.com/',
+          href: 'https://give-me-a-mask.herokuapp.com/',
+        },
+        {
+          content: 'https://github.com/jungguji/give-me-a-mask',
+          href: 'https://github.com/jungguji/give-me-a-mask',
         },
       ],
     },
