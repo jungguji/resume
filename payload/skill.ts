@@ -9,7 +9,7 @@ const backend: ISkill.Skill = {
     },
     {
       title: 'Spring-Boot',
-      level: 2,
+      level: 3,
     },
     {
       title: 'Mybatis',
@@ -17,7 +17,7 @@ const backend: ISkill.Skill = {
     },
     {
       title: 'Hibernate',
-      level: 2,
+      level: 3,
     },
   ],
 };
@@ -27,7 +27,7 @@ const database: ISkill.Skill = {
   items: [
     {
       title: 'MySQL',
-      level: 2,
+      level: 3,
     },
     {
       title: 'MariaDB',
@@ -66,6 +66,10 @@ const frontend: ISkill.Skill = {
     {
       title: 'jQuery',
       level: 2,
+    },
+    {
+      title: 'Vue.js',
+      level: 1,
     },
   ],
 };

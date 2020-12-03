@@ -2,8 +2,12 @@ import { IArticle } from '../component/article/IArticle';
 
 const article: IArticle.Payload = {
   disable: false,
-
   list: [
+    {
+      content: '(2020. 11. 16) Synchronous, Asynchronous와 Blocking, Non-Blocking',
+      href:
+        'https://jungguji.github.io/2020/11/16/Synchronous-Asynchronous%EC%99%80-Blocking-Non-Blocking/',
+    },
     {
       content: '(2020. 05. 30) Spring Controller Junit으로 Test하기 ',
       href: 'https://jungguji.github.io/2020/05/30/Spring-Controller-Junit-Test/',
