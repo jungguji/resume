@@ -17,7 +17,7 @@ const backend: ISkill.Skill = {
     },
     {
       title: 'Hibernate',
-      level: 3,
+      level: 2,
     },
   ],
 };
@@ -27,7 +27,7 @@ const database: ISkill.Skill = {
   items: [
     {
       title: 'MySQL',
-      level: 3,
+      level: 2,
     },
     {
       title: 'MariaDB',
