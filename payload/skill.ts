@@ -7,17 +7,17 @@ const backend: ISkill.Skill = {
       title: 'Java',
     },
     {
-      title: 'Spring / Spring Boot'
+      title: 'Spring / Spring Boot',
     },
     {
-      title: 'MySQL / Hibernate / Querydsl'
+      title: 'MySQL / Hibernate / Querydsl',
     },
     {
-      title: 'Junit4 / 5'
+      title: 'Junit4 / 5',
     },
     {
-      title: 'Maven'
-    }
+      title: 'Maven',
+    },
   ],
 };
 
@@ -25,16 +25,16 @@ const devOps: ISkill.Skill = {
   category: 'DevOps',
   items: [
     {
-      title: 'AWS EC2'
+      title: 'AWS EC2',
     },
     {
-      title: 'AWS RDS'
+      title: 'AWS RDS',
     },
     {
-      title: 'AWS S3'
+      title: 'AWS S3',
     },
     {
-      title: 'Linux Ubuntu'
+      title: 'Linux Ubuntu',
     },
   ],
 };
@@ -47,7 +47,7 @@ const etc: ISkill.Skill = {
     },
     {
       title: 'Intelli J',
-    }
+    },
   ],
 };
 

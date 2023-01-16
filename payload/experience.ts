@@ -13,9 +13,7 @@ const experience: IExperience.Payload = {
         'Java를 이용한 SOAP WebService를 활용한 이종간 Interface 기능 개발',
         'OODB내에 Tree구조로 저장된 Data 파싱하여 RDB에 저장하는 기능 개발',
       ],
-      skillKeywords: [
-        'Java', 'Spring','Spring Boot','MySQL','Hibernate','AWS', 'Ubuntu OS'
-      ],
+      skillKeywords: ['Java', 'Spring', 'Spring Boot', 'MySQL', 'Hibernate', 'AWS', 'Ubuntu OS'],
     },
     {
       title: '티엔씨파트너',
