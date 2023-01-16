@@ -4,6 +4,20 @@ const experience: IExperience.Payload = {
   disable: false,
   list: [
     {
+      title: '유모멘트',
+      position: 'Server Back-end Developer',
+      startedAt: '2021-01',
+      descriptions: [
+        '8년 째 서비스 중인 예비 신랑, 신부를 위한 결혼 준비 서비스인 웨딩의 여신 개발 및 유지보수',
+        'Spring + Dojo + Hibernate 기반의 자체 framework를 이용한 MES 시스템 개발',
+        'Java를 이용한 SOAP WebService를 활용한 이종간 Interface 기능 개발',
+        'OODB내에 Tree구조로 저장된 Data 파싱하여 RDB에 저장하는 기능 개발',
+      ],
+      skillKeywords: [
+        'Java', 'Spring','Spring Boot','MySQL','Hibernate','AWS', 'Ubuntu OS'
+      ],
+    },
+    {
       title: '티엔씨파트너',
       position: 'Java Developer',
       startedAt: '2016-09',
