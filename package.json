@@ -1,7 +1,7 @@
 {
   "name": "resume",
-  "lastestUpdatedAt": "2020-12-03",
-  "version": "1.0.2",
+  "lastestUpdatedAt": "2023-01-17",
+  "version": "2.0.0",
   "description": "Static HTML based RESUME made with next.js",
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,7 @@
     "lint": "eslint component/**/* pages/**/* payload/**/* *.ts --fix",
     "typedoc": "typedoc --excludeExternals"
   },
-  "homepage": "https://jungguji.github.io/resume/",
+  "homepage": "https://jungguji.github.io",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jungguji/resume.git"
