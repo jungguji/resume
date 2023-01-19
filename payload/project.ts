@@ -4,6 +4,48 @@ const project: IProject.Payload = {
   disable: false,
   list: [
     {
+      title: '웨딩의 여신 푸시 시스템 개선',
+      startedAt: '2022-07',
+      endedAt: '2022-08',
+      where: '유모멘트',
+      descriptions: [
+        { content: '19만 유저에게 전송하는데 8시간 정도 걸리던 푸시를 30분 안에 발송할수 있도록 개선' },
+        { content: 
+         ''
+        },
+      ],
+    },
+    {
+      title: '웨딩의 여신 공통코드 모듈화',
+      startedAt: '2022-07',
+      endedAt: '2022-08',
+      where: '유모멘트',
+      descriptions: [
+        { content: '여러 프로젝트에서 동일하게 사용되는 Entity class들을 모듈화하여 Nexus Repository에 업로드 후 사용' },
+        { content: 
+          '같은 데이터베이스를 공유하는 여러 개의 프로젝트가 존재하는데, 모두 JPA(Hibernate)를 사용하고 있어서 '
+          + '한 프로젝트에서 Entity class를 수정할 경우 같은 Entity를 사용하는 다른 프로젝트에서도 마찬가지로 같이 수정해야 했는데, '
+          + '개발자가 다수의 프로젝트를 매번 손수 수정해야 하다 보니 필연적으로 휴먼 에러가 발생할 수밖에 없는 구조였고, 이를 해결하는 방법으로 '
+          + 'Entity class들을 따로 모은 프로젝트를 별도로 구성하여 내부 Maven 저장소(Nexus)에 Jar형태로 업로드하고, 다른 프로젝트들에서 이를 추가하여 사용하도록 개선'
+        },
+      ],
+    },
+    {
+      title: '웨딩의 여신 컨텐츠 페이지 조회 속도 개선',
+      startedAt: '2021-09',
+      endedAt: '2021-09',
+      where: '유모멘트',
+      descriptions: [
+        { content: '페이스북 광고에 연결한 이벤트 페이지에 유저가 도달하는 광고 노출 수 대비 비정상적으로 적게 노출 되는 이슈가 발생' },
+        { content: 
+          '광고에 노출한 이벤트 페이지의 로딩이 너무 느려서 발생하는 문제로 판단하여, 확인결과 JSP + jQuery로 구성된 해당 이벤트 페이지 로딩이 평균 9초 정도 걸리는 것을 확인였고, '
+          + '로딩 속도 개선을 위해 페이지 조회 시 보이는 윗 부분만 먼저 로딩될 수 있게 윗부분 데이터만 먼저 보내고 '
+          + '페이지 하단에 노출되는 데이터들은 ajax를 활용하여 비동기로 호출하도록 개선하였고, 평균 로딩 시간을 9초에서 2초 정도로 개선'
+          + 'Entity class들을 따로 모은 프로젝트를 별도로 구성하여 내부 Maven 저장소(Nexus)에 Jar형태로 업로드하고, 다른 프로젝트들에서 이를 추가하여 사용하도록 개선'
+        },
+      ],
+    },
+    {
       title: '한국항공우주산업 PLM 3차 및 DM 구축 프로젝트',
       startedAt: '2018-09',
       endedAt: '2019-06',
@@ -23,41 +65,7 @@ const project: IProject.Payload = {
             '파싱된 데이터를 bulk insert query로 대용량 insert 한 후 Webservice를 통해 return이 오면 결과 update ',
         },
       ],
-    },
-    {
-      title: 'LG전자 HE사업부 SW배포 개선 프로젝트',
-      startedAt: '2017-10',
-      endedAt: '2018-06',
-      where: '티엔씨파트너',
-      descriptions: [
-        { content: 'Spring + Mybatis + Oracle + Enovia + Jsp로 운영중인 시스템의 고도화 프로젝트' },
-        {
-          content:
-            '중계 데이터베이스의 컬럼 값을 Update하는 방식을 통한 이종간 인터페이스 기능 개발',
-        },
-      ],
-    },
-    {
-      title: '세명&화성 MES(스마트공장) 구축 프로젝트',
-      startedAt: '2016-12',
-      endedAt: '2017-06',
-      where: '티엔씨파트너',
-      descriptions: [
-        {
-          content:
-            '기존에 excel로 하던 작업들을 작업장에 있는 POP를 통해 사무실에서 웹으로 작성한 생산계획서를 띄워 작업 할 수 있도록 하는 시스템 개발',
-        },
-        { content: 'Spring + Hibernate, view는 JSP와 Dojo + jQuery로 개발' },
-        {
-          content:
-            '수주 정보와 생산계획서를 ManyToMany로 연결하여 수주에 따른 생산계획서를 작성할 수 있도록 함',
-        },
-        {
-          content:
-            '기존 excel로 작업된 데이터들을 작업자들이 migraion 할 수 있도록 Apache POI를 이용해 Excel Migraion 기능 개발',
-        },
-      ],
-    },
+    }
   ],
 };
 
