@@ -10,8 +10,7 @@ const project: IProject.Payload = {
       where: '유모멘트',
       descriptions: [
         {
-          content:
-            '19만 사용자에게 전송하는데 5시간 걸리던 푸시를 30분 안에 발송할 수 있도록 개선',
+          content: '19만 사용자에게 전송하는데 5시간 걸리던 푸시를 30분 안에 발송할 수 있도록 개선',
         },
         {
           content:
