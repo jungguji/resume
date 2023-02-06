@@ -11,7 +11,7 @@ const experience: IExperience.Payload = {
         '8년 째 운영 중인 Java Spring + JPA(Hibernate) + MySQL 기반 서비스의 Back-end 개발 및 유지보수',
         'AWS EC2(CLB), RDS, S3 환경의 시스템 운영',
         '내부망 Repository(Nexus)을 이용한 공통코드 라이브러리화, Shell script를 이용한 배포, Exception Log Slack 연동 등 개발환경 개선',
-        '멀티 스레드를 이용한 푸시 시스템 개선 (8시간 -> 30분)',
+        '멀티 스레드를 이용한 푸시 시스템 개선 (5시간 -> 30분)',
         '업체용 서비스, 백오피스 등 레거시 서비스 개선 및 신규 개발',
       ],
       skillKeywords: ['Java', 'Spring', 'Spring Boot', 'MySQL', 'Hibernate', 'AWS'],
