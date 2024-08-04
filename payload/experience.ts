@@ -4,9 +4,23 @@ const experience: IExperience.Payload = {
   disable: false,
   list: [
     {
+      title: '제네시스랩',
+      position: 'Server Back-end Developer',
+      startedAt: '2023-04',
+      descriptions: [
+        'AI 기술을 바탕으로한 Interactive 콘텐츠, AI Agent 플레이 서비스 쥬씨(ZUICY)의 개발 및 유지보수',
+        'GrahpQL을 활용하는 메인 서비스서버, Admin, 콘텐츠 빌드 서버, 채팅 서버, 캐시 서버 등 여러 개의 분산된 서버환경에서 운영',
+        '트래픽 과부하 장애 대응',
+        'AI Agent 톡(대화) 기능 개발',
+        '지정된 시간 내에서 유저들에게 AI Agent의 선톡(먼저 메시지 보내기) 기능 개발'
+      ],
+      skillKeywords: ['Java', 'Spring Boot', 'GraphQL', 'MariaDB', 'Redis', 'Docker', 'SQS'],
+    },
+    {
       title: '유모멘트',
       position: 'Server Back-end Developer',
       startedAt: '2021-01',
+      endedAt: '2023-04',
       descriptions: [
         '8년 째 운영 중인 Java Spring + JPA(Hibernate) + MySQL 기반 서비스의 Back-end 개발 및 유지보수',
         'AWS EC2(CLB), RDS, S3 환경의 시스템 운영',

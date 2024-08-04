@@ -10,13 +10,13 @@ const backend: ISkill.Skill = {
       title: 'Spring / Spring Boot',
     },
     {
-      title: 'MySQL / Hibernate / Querydsl',
+      title: 'MySQL, MariaDB / Hibernate / Querydsl',
     },
     {
       title: 'Junit4 / 5',
     },
     {
-      title: 'Maven',
+      title: 'Maven, Gradle',
     },
   ],
 };
