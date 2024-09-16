@@ -1,4 +1,4 @@
-import { Row, Col, /*Alert*/ } from 'reactstrap';
+import { Row, Col /* Alert */ } from 'reactstrap';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { PropsWithChildren } from 'react';
 import ProfileContact from './contact';
@@ -70,4 +70,4 @@ function createProfileContactMap(contacts: Payload['contact']) {
 //       </Alert>
 //     </EmptyRowCol>
 //   );
-}
+// }
