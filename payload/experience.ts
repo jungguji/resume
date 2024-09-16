@@ -13,7 +13,7 @@ const experience: IExperience.Payload = {
         '트래픽 과부하 장애 대응 및 구조 개선',
         'AI Agent(LLM) 톡(대화) 기능 개발 및 개선',
         '지정된 시간 내에서 유저들에게 AI Agent(LLM)의 선톡(먼저 메시지 보내기) 기능 개발',
-        '매출 증대를 위한 AI Agent 톡 기능용 신규 재화 시스템 개발'
+        '매출 증대를 위한 AI Agent 톡 기능용 신규 재화 시스템 개발',
       ],
       skillKeywords: ['Java', 'Spring Boot', 'GraphQL', 'MariaDB', 'Redis', 'Docker', 'SQS'],
     },
