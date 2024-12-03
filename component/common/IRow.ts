@@ -27,11 +27,11 @@ export declare namespace IRow {
   export interface Description {
     /** ### 설명 본문 */
     content?: string;
-    
-    markdown_content?: string;
+
+    markdownContent?: string;
 
     /** ### 설명 제목 */
-    content_title?: string;
+    contentTitle?: string;
 
     /**
      * ### 폰트 두께 설정이 필요할 경우

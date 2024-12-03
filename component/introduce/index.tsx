@@ -1,11 +1,11 @@
 import { Row, Col, Badge } from 'reactstrap';
 import { PropsWithChildren } from 'react';
 import { DateTime } from 'luxon';
+import Markdown from 'markdown-to-jsx'; // Markdown-to-JSX 추가
 import { Style } from '../common/Style';
 import Util from '../common/Util';
 import { IIntroduce } from './IIntroduce';
 import { PreProcessingComponent } from '../common/PreProcessingComponent';
-import Markdown from 'markdown-to-jsx'; // Markdown-to-JSX 추가
 
 type Payload = IIntroduce.Payload;
 
