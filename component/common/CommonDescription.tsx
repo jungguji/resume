@@ -102,7 +102,7 @@ function Description({ description }: PropsWithChildren<{ description: IRow.Desc
     }
     return (
       <li>
-        <Markdown>{content ?? ''}</Markdown> 
+        <Markdown>{content ?? ''}</Markdown>
       </li>
     );
   })();
