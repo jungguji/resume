@@ -7,6 +7,7 @@ const experience: IExperience.Payload = {
       title: '제네시스랩',
       position: 'Server Back-end Developer',
       startedAt: '2023-04',
+      endedAt: '2024-11',
       descriptions: [
         'AI 기술을 바탕으로한 Interactive 콘텐츠, AI Agent 플레이 서비스 쥬씨(ZUICY)의 개발 및 유지보수',
         'GrahpQL을 활용하는 메인 서비스서버, Admin, 콘텐츠 빌드 서버, 채팅 서버, 캐시 서버 등 여러 개의 분산된 서버환경에서 운영',
