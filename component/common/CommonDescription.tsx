@@ -55,15 +55,7 @@ function DescriptionRecursion({
 }
 
 function Description({ description }: PropsWithChildren<{ description: IRow.Description }>) {
-  const {
-    content,
-    contentTitle,
-    markdownContent,
-    href,
-    postImage,
-    postHref,
-    weight,
-  } = description;
+  const { content, contentTitle, markdownContent, href, postImage, postHref, weight } = description;
 
   const component = (() => {
     if (href && postImage) {
@@ -83,7 +75,7 @@ function Description({ description }: PropsWithChildren<{ description: IRow.Desc
     if (postHref && postImage) {
       return (
         <li style={getFontWeight(weight)}>
-          <Markdown>{content}</Markdown> <HrefTargetBlank url={postHref} text={postHref} />{' '}
+          <Markdown>{content ?? ''}</Markdown> <HrefTargetBlank url={postHref} text={postHref} />{' '}
           <img src={postImage} alt={postImage} />
         </li>
       );
@@ -91,14 +83,14 @@ function Description({ description }: PropsWithChildren<{ description: IRow.Desc
     if (postHref) {
       return (
         <li style={getFontWeight(weight)}>
-          <Markdown>{content}</Markdown> <HrefTargetBlank url={postHref} text={postHref} />
+          <Markdown>{content ?? ''}</Markdown> <HrefTargetBlank url={postHref} text={postHref} />
         </li>
       );
     }
     if (postImage) {
       return (
         <li style={getFontWeight(weight)}>
-          <Markdown>{content}</Markdown> <img src={postImage} alt={postImage} />
+          <Markdown>{content ?? ''}</Markdown> <img src={postImage} alt={postImage} />
         </li>
       );
     }
@@ -110,7 +102,7 @@ function Description({ description }: PropsWithChildren<{ description: IRow.Desc
     }
     return (
       <li>
-        <Markdown>{content}</Markdown>
+        <Markdown>{content ?? ''}</Markdown> 
       </li>
     );
   })();
