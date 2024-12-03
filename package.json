@@ -48,6 +48,7 @@
     "debug": "^4.1.1",
     "jquery": "^3.5.1",
     "luxon": "^1.24.1",
+    "markdown-to-jsx": "^7.7.0",
     "next": "^9.4.1",
     "next-images": "^1.4.0",
     "next-seo": "^4.5.0",

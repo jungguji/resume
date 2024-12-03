@@ -16,6 +16,10 @@ export default class ResumeDocument extends Document {
             href="https://fonts.googleapis.com/css?family=Parisienne&display=swap"
             rel="stylesheet"
           />
+          <link
+            href="https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff"
+            rel="stylesheet"
+          />
         </Head>
         <body>
           <Main />
