@@ -5,6 +5,7 @@ import { Style } from '../common/Style';
 import Util from '../common/Util';
 import { IIntroduce } from './IIntroduce';
 import { PreProcessingComponent } from '../common/PreProcessingComponent';
+import Markdown from 'markdown-to-jsx'; // Markdown-to-JSX 추가
 
 type Payload = IIntroduce.Payload;
 
@@ -35,8 +36,7 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
         <Col sm={12} md={9}>
           {payload.contents.map((content, index) => (
             <span key={index.toString()}>
-              {content}
-              <br />
+              <Markdown>{content}</Markdown>
             </span>
           ))}
           <p className="text-right">
