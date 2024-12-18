@@ -4,8 +4,7 @@ const article: IArticle.Payload = {
   disable: false,
   list: [
     {
-      content:
-        '(2024. 11. 19) 테스트 코드 작성을 더 쉽게 (with. Fixture Monkey) ',
+      content: '(2024. 11. 19) 테스트 코드 작성을 더 쉽게 (with. Fixture Monkey) ',
       href:
         'https://jungguji.github.io/2024/11/19/%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%BD%94%EB%93%9C-%EC%9E%91%EC%84%B1%EC%9D%84-%EB%8D%94-%EC%89%BD%EA%B2%8C-with-Fixture-Monkey/',
     },
@@ -23,7 +22,7 @@ const article: IArticle.Payload = {
       content: '(2022. 10. 16) Intelli J 코드 자동생성(with Live Template)',
       href:
         'https://jungguji.github.io/2022/10/16/Intelli-J-%EC%BD%94%EB%93%9C-%EC%9E%90%EB%8F%99%EC%83%9D%EC%84%B1-with-Live-Template/',
-    }
+    },
   ],
 };
 
