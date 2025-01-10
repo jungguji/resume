@@ -8,6 +8,7 @@ import { Etc } from '../component/etc';
 import { Experience } from '../component/experience';
 import { Footer } from '../component/footer';
 import { Introduce } from '../component/introduce';
+// import { Motivation } from '../component/motivation'
 import { OpenSource } from '../component/openSource';
 import { Presentation } from '../component/presentation';
 import { Profile } from '../component/profile';
@@ -28,6 +29,7 @@ function Yosume() {
       <Container style={Style.global}>
         <Profile.Component payload={Payload.profile} />
         <Introduce.Component payload={Payload.introduce} />
+        {/* <Motivation.Component payload={Payload.introduce} /> */}
         <Experience.Component payload={Payload.experience} />
         <Project.Component payload={Payload.project} />
         <OpenSource.Component payload={Payload.openSource} />
