@@ -4,7 +4,7 @@ const article: IArticle.Payload = {
   disable: false,
   list: [
     {
-      content: '(2025. 01. 09) 테스트 코드 작성을 더 쉽게 (with. Fixture Monkey) ',
+      content: '(2025. 01. 09) 동시성 제어를 위한 Redisson tryLock 메서드의 작동 원리',
       href:
         'https://jungguji.github.io/2025/01/09/%EB%8F%99%EC%8B%9C%EC%84%B1-%EC%A0%9C%EC%96%B4%EB%A5%BC-%EC%9C%84%ED%95%9C-Redisson-tryLock-%EB%A9%94%EC%84%9C%EB%93%9C%EC%9D%98-%EC%9E%91%EB%8F%99-%EC%9B%90%EB%A6%AC',
     },
@@ -22,7 +22,7 @@ const article: IArticle.Payload = {
       content: '(2022. 12. 26) JPA CustomRepository 작성 시 유의사항',
       href:
         'https://jungguji.github.io/2022/12/26/JPA-CustomRepository-%EC%9E%91%EC%84%B1-%EC%8B%9C-%EC%9C%A0%EC%9D%98%EC%82%AC%ED%95%AD/',
-    }
+    },
   ],
 };
 

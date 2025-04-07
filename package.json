@@ -1,6 +1,6 @@
 {
   "name": "resume",
-  "lastestUpdatedAt": "2024-12-18",
+  "lastestUpdatedAt": "2025-01-10",
   "version": "2.0.0",
   "description": "Static HTML based RESUME made with next.js",
   "main": "index.js",
@@ -46,6 +46,7 @@
     "bootstrap": "^4.5.0",
     "chalk": "^4.0.0",
     "debug": "^4.1.1",
+    "hexo-server": "^3.0.0",
     "jquery": "^3.5.1",
     "luxon": "^1.24.1",
     "markdown-to-jsx": "^7.7.0",

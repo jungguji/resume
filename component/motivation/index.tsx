@@ -17,7 +17,6 @@ export const Motivation = {
 };
 
 function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
-
   return (
     <div className="mt-5">
       <Row>
