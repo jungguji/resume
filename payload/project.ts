@@ -171,96 +171,112 @@ const project: IProject.Payload = {
       ],
     },
     {
-      "title": "웨딩의 여신 푸시 시스템 개선",
-      "startedAt": "2022-11",
-      "endedAt": "2022-11",
-      "where": "웨딩의 여신",
-      "descriptions": [
+      title: '웨딩의 여신 푸시 시스템 개선',
+      startedAt: '2022-11',
+      endedAt: '2022-11',
+      where: '웨딩의 여신',
+      descriptions: [
         {
-          "contentTitle": "##### **문제** #####"
+          contentTitle: '##### **문제** #####',
         },
         {
-          "content": "기존 @Scheduled 기반 푸시 시스템은 단일 스레드로 순차 처리하여 19만 사용자에게 푸시를 발송하는 데 5시간 이상 소요됨."
+          content:
+            '기존 @Scheduled 기반 푸시 시스템은 단일 스레드로 순차 처리하여 19만 사용자에게 푸시를 발송하는 데 5시간 이상 소요됨.',
         },
         {
-          "content": "과도한 발송 시간으로 인해 하루에 한 번 이상 푸시 발송이 불가능하여, 긴급 공지나 시의성 있는 광고/이벤트 진행에 제약 발생."
+          content:
+            '과도한 발송 시간으로 인해 하루에 한 번 이상 푸시 발송이 불가능하여, 긴급 공지나 시의성 있는 광고/이벤트 진행에 제약 발생.',
         },
         {
-          "content": "마케팅 활동의 유연성 저하 및 적시 정보 전달 실패 가능성 존재.<br /><br />"
+          content: '마케팅 활동의 유연성 저하 및 적시 정보 전달 실패 가능성 존재.<br /><br />',
         },
         {
-          "contentTitle": "##### **해결** #####"
+          contentTitle: '##### **해결** #####',
         },
         {
-          "content": "푸시 발송 전용 <strong style='font-weight: bold;'>ThreadPoolTaskExecutor (스레드 풀)</strong>를 도입하여 <strong style='font-weight: bold;'>병렬 처리</strong> 구현."
+          content:
+            "푸시 발송 전용 <strong style='font-weight: bold;'>ThreadPoolTaskExecutor (스레드 풀)</strong>를 도입하여 <strong style='font-weight: bold;'>병렬 처리</strong> 구현.",
         },
         {
-          "content": "푸시 발송 요청 건별로 스레드를 할당하여 다수의 푸시 알림을 동시에 전송하도록 로직 수정.<br /><br />"
+          content:
+            '푸시 발송 요청 건별로 스레드를 할당하여 다수의 푸시 알림을 동시에 전송하도록 로직 수정.<br /><br />',
         },
         {
-          "contentTitle": "##### **성과** #####"
+          contentTitle: '##### **성과** #####',
         },
         {
-          "content": "전체 사용자(19만 명) 대상 푸시 발송 시간을 <strong style='font-weight: bold;'>5시간에서 30분으로 획기적으로 단축</strong> (90% 이상 시간 감소)."
+          content:
+            "전체 사용자(19만 명) 대상 푸시 발송 시간을 <strong style='font-weight: bold;'>5시간에서 30분으로 획기적으로 단축</strong> (90% 이상 시간 감소).",
         },
         {
-          "content": "하루에도 여러 번의 광고 및 이벤트 푸시 발송이 가능해져 마케팅 캠페인 운영의 유연성 및 효과 증대."
+          content:
+            '하루에도 여러 번의 광고 및 이벤트 푸시 발송이 가능해져 마케팅 캠페인 운영의 유연성 및 효과 증대.',
         },
         {
-          "content": "푸시 시스템 성능 개선을 통해 서비스 운영 효율성 및 사용자 정보 전달의 적시성 향상."
-        }
-      ]
+          content:
+            '푸시 시스템 성능 개선을 통해 서비스 운영 효율성 및 사용자 정보 전달의 적시성 향상.',
+        },
+      ],
     },
     {
-      "title": "웨딩의 여신 공통코드 모듈화",
-      "startedAt": "2022-07",
-      "endedAt": "2022-08",
-      "where": "웨딩의 여신",
-      "descriptions": [
+      title: '웨딩의 여신 공통코드 모듈화',
+      startedAt: '2022-07',
+      endedAt: '2022-08',
+      where: '웨딩의 여신',
+      descriptions: [
         {
-          "contentTitle": "##### **문제** #####"
+          contentTitle: '##### **문제** #####',
         },
         {
-          "content": "동일한 데이터베이스를 공유하는 여러 프로젝트에서 JPA Entity 클래스를 중복으로 관리."
+          content:
+            '동일한 데이터베이스를 공유하는 여러 프로젝트에서 JPA Entity 클래스를 중복으로 관리.',
         },
         {
-          "content": "Entity 변경 시 관련된 모든 프로젝트의 코드를 개발자가 수동으로 일일이 수정해야 하는 번거로움 발생."
+          content:
+            'Entity 변경 시 관련된 모든 프로젝트의 코드를 개발자가 수동으로 일일이 수정해야 하는 번거로움 발생.',
         },
         {
-          "content": "수동 동기화 과정에서 휴먼 에러 발생 가능성이 높고, 프로젝트 간 데이터 모델 불일치 위험 존재."
+          content:
+            '수동 동기화 과정에서 휴먼 에러 발생 가능성이 높고, 프로젝트 간 데이터 모델 불일치 위험 존재.',
         },
         {
-          "content": "코드 중복으로 인한 유지보수 비용 증가 및 개발 생산성 저하.<br /><br />"
+          content: '코드 중복으로 인한 유지보수 비용 증가 및 개발 생산성 저하.<br /><br />',
         },
         {
-          "contentTitle": "##### **해결** #####"
+          contentTitle: '##### **해결** #####',
         },
         {
-          "content": "여러 프로젝트에서 공통으로 사용하는 JPA Entity 클래스들을 별도의 <strong style='font-weight: bold;'>공통 모듈</strong> 프로젝트로 분리."
+          content:
+            "여러 프로젝트에서 공통으로 사용하는 JPA Entity 클래스들을 별도의 <strong style='font-weight: bold;'>공통 모듈</strong> 프로젝트로 분리.",
         },
         {
-          "content": "해당 공통 모듈을 JAR 파일 형태로 빌드하여 사내 <strong style='font-weight: bold;'>Nexus Maven Repository</strong>에 배포."
+          content:
+            "해당 공통 모듈을 JAR 파일 형태로 빌드하여 사내 <strong style='font-weight: bold;'>Nexus Maven Repository</strong>에 배포.",
         },
         {
-          "content": "각 서비스 프로젝트에서는 공통 모듈을 Maven/Gradle 의존성으로 추가하여 사용하도록 구조 변경.<br /><br />"
+          content:
+            '각 서비스 프로젝트에서는 공통 모듈을 Maven/Gradle 의존성으로 추가하여 사용하도록 구조 변경.<br /><br />',
         },
         {
-          "contentTitle": "##### **성과** #####"
+          contentTitle: '##### **성과** #####',
         },
         {
-          "content": "Entity 클래스 관리 포인트를 <strong style='font-weight: bold;'>중앙화하여 코드 중복 제거</strong> 및 일관성 확보."
+          content:
+            "Entity 클래스 관리 포인트를 <strong style='font-weight: bold;'>중앙화하여 코드 중복 제거</strong> 및 일관성 확보.",
         },
         {
-          "content": "Entity 변경 시 공통 모듈만 수정 및 배포하면 모든 프로젝트에 일괄 적용되어 <strong style='font-weight: bold;'>유지보수 효율성 증대</strong>."
+          content:
+            "Entity 변경 시 공통 모듈만 수정 및 배포하면 모든 프로젝트에 일괄 적용되어 <strong style='font-weight: bold;'>유지보수 효율성 증대</strong>.",
         },
         {
-          "content": "수동 코드 수정 과정 제거로 <strong style='font-weight: bold;'>휴먼 에러 발생 가능성을 원천 차단</strong>하고 데이터 모델의 정합성 보장."
+          content:
+            "수동 코드 수정 과정 제거로 <strong style='font-weight: bold;'>휴먼 에러 발생 가능성을 원천 차단</strong>하고 데이터 모델의 정합성 보장.",
         },
         {
-          "content": "표준화된 공통 모듈 사용으로 신규 프로젝트 개발 시 생산성 향상."
-        }
-      ]
-    }
+          content: '표준화된 공통 모듈 사용으로 신규 프로젝트 개발 시 생산성 향상.',
+        },
+      ],
+    },
   ],
 };
 
