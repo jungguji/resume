@@ -4,6 +4,58 @@ const project: IProject.Payload = {
   disable: false,
   list: [
     {
+      title: 'ZUICY 톡 기능 개발 및 개선',
+      startedAt: '2024-06',
+      endedAt: '2024-08',
+      where: '제네시스랩',
+      descriptions: [
+        {
+          contentTitle: '##### **문제** #####',
+        },
+        {
+          content:
+            '기존에 제공하는 영상 콘텐츠는 비용 대비 효율이 좋지 않아, 신규 유저 유입과 리텐션을 위한 AI 대화 기능 필요',
+        },
+        {
+          content:
+            '사용량이 증가할 경우 채팅 응답 지연이(5분 이상) 자주 발생하여 유저의 서비스 경험 하락',
+        },
+        {
+          content: '스케일 아웃 한계와 블로킹 이슈로 대규모 요청 처리 어려움<br /><br />',
+        },
+        {
+          contentTitle: '##### **해결** #####',
+        },
+        {
+          content:
+            "1단계: 기존 RDB 기반 Queue 설계의 한계를 해결하기 위해 ThreadPoolTaskExecutor와 CompletableFuture를 사용해 <strong style='font-weight: bold;'>병렬 처리</strong> 도입, 응답 속도 개선",
+        },
+        {
+          content:
+            "2단계: RestTemplate 대신 WebClient를 도입하여 비동기 요청으로 <strong style='font-weight: bold;'>동시처리</strong>, 블로킹 이슈를 완화하고 처리량 증가 및 응답 속도 개선",
+        },
+        {
+          content:
+            "3단계: 기존 채팅서버를 채팅 요청, 응답 서버로 분리하고 <strong style='font-weight: bold;'>메시지 큐(SQS) 기반 아키텍처로 전환</strong>, 서버와 LLM 간 요청 및 응답을 완전히 비동기화하고 스케일 아웃 문제를 해결<br /><br />",
+        },
+        {
+          contentTitle: '##### **성과** #####',
+        },
+        {
+          content: '응답 속도를 개선하여 서비스 장애 해결',
+        },
+        {
+          content: '채팅 서버의 요청 처리량 증가와 시스템 안정성 향상',
+        },
+        {
+          content: '단계적 개선을 통해 유저 리텐션 및 톡 기능의 사용성 강화로 서비스 품질 향상',
+        },
+        {
+          content: '레거시한 시스템을 더 많은 트래픽을 감당 가능한 구조로 개선',
+        },
+      ],
+    },
+    {
       title: 'ZUICY 톡 기능용 신규 재화 시스템 개발',
       startedAt: '2024-08',
       endedAt: '2024-09',
@@ -18,10 +70,7 @@ const project: IProject.Payload = {
         },
         {
           content:
-            '다양한 종류의 캐시(무료/유료)를 사용하여 하트를 구매할 때 정산 정확성과 데이터 무결성 보장 어려움',
-        },
-        {
-          markdownContent: '- 사용된 캐시 수량별로 하트가 분배',
+            '대규모 사용자를 위한 신규 결제 시스템 도입 시 데이터 정합성 및 무결성 확보의 중요성',
         },
         {
           content:
@@ -32,7 +81,7 @@ const project: IProject.Payload = {
         },
         {
           content:
-            'Redis의 java 라이브러리 중 Redisson을 활용해 분산 환경에서 동시성 제어 및 정합성 유지',
+            '분산 환경에서의 <strong style="font-weight: bold;">동시성 제어</strong>를 위해 Redis(Redisson) 분산 락 적용 및 정확한 재화 거래 기록을 통한 무결성 보장',
         },
         {
           content: '소수점 4자리까지 표현하도록 정산 정책을 도입하여 금액 오차를 최소화',
@@ -48,7 +97,7 @@ const project: IProject.Payload = {
           content: '신규 비즈니스 모델(유료 대화 기능)을 성공적으로 도입',
         },
         {
-          content: '정산 시스템 안정화 및 데이터 무결성 강화',
+          content: '안정적인 결제 시스템 구축 및 데이터 신뢰도 향상',
         },
         {
           content: '유관부서와의 원활한 커뮤니케이션을 통한 정책 수정 및 합의',
@@ -122,100 +171,96 @@ const project: IProject.Payload = {
       ],
     },
     {
-      title: 'ZUICY 톡 기능 개발 및 개선',
-      startedAt: '2024-06',
-      endedAt: '2024-08',
-      where: '제네시스랩',
-      descriptions: [
+      "title": "웨딩의 여신 푸시 시스템 개선",
+      "startedAt": "2022-11",
+      "endedAt": "2022-11",
+      "where": "웨딩의 여신",
+      "descriptions": [
         {
-          contentTitle: '##### **문제** #####',
+          "contentTitle": "##### **문제** #####"
         },
         {
-          content:
-            '기존에 제공하는 영상 콘텐츠는 비용 대비 효율이 좋지 않아, 신규 유저 유입과 리텐션을 위한 AI 대화 기능 필요',
+          "content": "기존 @Scheduled 기반 푸시 시스템은 단일 스레드로 순차 처리하여 19만 사용자에게 푸시를 발송하는 데 5시간 이상 소요됨."
         },
         {
-          content:
-            '사용량이 증가할 경우 채팅 응답 지연이(5분 이상) 자주 발생하여 유저의 서비스 경험 하락',
+          "content": "과도한 발송 시간으로 인해 하루에 한 번 이상 푸시 발송이 불가능하여, 긴급 공지나 시의성 있는 광고/이벤트 진행에 제약 발생."
         },
         {
-          content: '스케일 아웃 한계와 블로킹 이슈로 대규모 요청 처리 어려움<br /><br />',
+          "content": "마케팅 활동의 유연성 저하 및 적시 정보 전달 실패 가능성 존재.<br /><br />"
         },
         {
-          contentTitle: '##### **해결** #####',
+          "contentTitle": "##### **해결** #####"
         },
         {
-          content:
-            "1단계: 기존 RDB 기반 Queue 설계의 한계를 해결하기 위해 ThreadPoolTaskExecutor와 CompletableFuture를 사용해 <strong style='font-weight: bold;'>병렬 처리</strong> 도입, 응답 속도 개선",
+          "content": "푸시 발송 전용 <strong style='font-weight: bold;'>ThreadPoolTaskExecutor (스레드 풀)</strong>를 도입하여 <strong style='font-weight: bold;'>병렬 처리</strong> 구현."
         },
         {
-          content:
-            "2단계: RestTemplate 대신 WebClient를 도입하여 비동기 요청으로 <strong style='font-weight: bold;'>동시처리</strong>, 블로킹 이슈를 완화하고 처리량 증가 및 응답 속도 개선",
+          "content": "푸시 발송 요청 건별로 스레드를 할당하여 다수의 푸시 알림을 동시에 전송하도록 로직 수정.<br /><br />"
         },
         {
-          content:
-            "3단계: 기존 구조를 <strong style='font-weight: bold;'>메시지 큐(SQS) 기반 아키텍처로 전환</strong>, 채팅 서버와 LLM 간 요청 및 응답을 완전히 비동기화하고 스케일 아웃 문제를 해결<br /><br />",
+          "contentTitle": "##### **성과** #####"
         },
         {
-          contentTitle: '##### **성과** #####',
+          "content": "전체 사용자(19만 명) 대상 푸시 발송 시간을 <strong style='font-weight: bold;'>5시간에서 30분으로 획기적으로 단축</strong> (90% 이상 시간 감소)."
         },
         {
-          content: '응답 속도를 개선하여 서비스 장애 해결',
+          "content": "하루에도 여러 번의 광고 및 이벤트 푸시 발송이 가능해져 마케팅 캠페인 운영의 유연성 및 효과 증대."
         },
         {
-          content: '채팅 서버의 요청 처리량 증가와 시스템 안정성 향상',
-        },
-        {
-          content: '단계적 개선을 통해 유저 리텐션 및 톡 기능의 사용성 강화로 서비스 품질 향상',
-        },
-        {
-          content: '레거시한 시스템을 더 많은 트래픽을 감당 가능한 구조로 개선',
-        },
-      ],
+          "content": "푸시 시스템 성능 개선을 통해 서비스 운영 효율성 및 사용자 정보 전달의 적시성 향상."
+        }
+      ]
     },
     {
-      title: '웨딩의 여신 푸시 시스템 개선',
-      startedAt: '2022-11',
-      endedAt: '2022-11',
-      where: '유모멘트',
-      descriptions: [
+      "title": "웨딩의 여신 공통코드 모듈화",
+      "startedAt": "2022-07",
+      "endedAt": "2022-08",
+      "where": "웨딩의 여신",
+      "descriptions": [
         {
-          content: '19만 사용자에게 전송하는데 5시간 걸리던 푸시를 30분 안에 발송할 수 있도록 개선',
+          "contentTitle": "##### **문제** #####"
         },
         {
-          content:
-            'Spring의 @Schedubled를 이용해 1시간마다 등록된 스케줄을 카카오 푸시 API와 FCM, APNs를 활용해 광고 푸시를 전송하고 있었는데, ' +
-            '전체 사용자에게 발송 시 5시간 정도 시간이 소요 되어서, 하루에 1번 이상의 푸시를 발송할 수가 없어서 광고나 이벤트 진행에 문제가 존재하였음',
+          "content": "동일한 데이터베이스를 공유하는 여러 프로젝트에서 JPA Entity 클래스를 중복으로 관리."
         },
         {
-          content:
-            '이를 해결하기 위해, 푸시 서비스를 위한 스레드 풀을 생성하여, 푸시 하나당 스레드 하나씩을 할당하여 동시에 여러 개의 푸시를 전송할 수 있게 수정하였고, ' +
-            '이렇게 개선하여 5시간이 소요되던 푸시를 30분으로 개선하여, 하루에 여러 건의 광고, 이벤트 푸시를 발송할 수 있게 함',
-        },
-      ],
-    },
-    {
-      title: '웨딩의 여신 공통코드 모듈화',
-      startedAt: '2022-07',
-      endedAt: '2022-08',
-      where: '유모멘트',
-      descriptions: [
-        {
-          content:
-            '여러 프로젝트에서 동일하게 사용되는 Entity class들을 모듈화하여 Nexus Repository에 업로드 후 사용',
+          "content": "Entity 변경 시 관련된 모든 프로젝트의 코드를 개발자가 수동으로 일일이 수정해야 하는 번거로움 발생."
         },
         {
-          content:
-            '같은 데이터베이스를 공유하는 여러 개의 프로젝트가 존재하는데, 모두 JPA(Hibernate)를 사용하고 있어서 ' +
-            '한 프로젝트에서 Entity class를 수정할 경우 같은 Entity를 사용하는 다른 프로젝트에서도 마찬가지로 같이 수정해야 했는데, ' +
-            '개발자가 다수의 프로젝트를 매번 손수 수정해야 하다 보니 필연적으로 휴먼 에러가 발생할 수밖에 없는 구조였음',
+          "content": "수동 동기화 과정에서 휴먼 에러 발생 가능성이 높고, 프로젝트 간 데이터 모델 불일치 위험 존재."
         },
         {
-          content:
-            '이를 해결하는 방법으로 Entity class들을 따로 모은 프로젝트를 별도로 구성하여 내부 Maven 저장소(Nexus)에 Jar형태로 업로드하고, 다른 프로젝트들에서 이를 추가하여 사용하도록 개선',
+          "content": "코드 중복으로 인한 유지보수 비용 증가 및 개발 생산성 저하.<br /><br />"
         },
-      ],
-    },
+        {
+          "contentTitle": "##### **해결** #####"
+        },
+        {
+          "content": "여러 프로젝트에서 공통으로 사용하는 JPA Entity 클래스들을 별도의 <strong style='font-weight: bold;'>공통 모듈</strong> 프로젝트로 분리."
+        },
+        {
+          "content": "해당 공통 모듈을 JAR 파일 형태로 빌드하여 사내 <strong style='font-weight: bold;'>Nexus Maven Repository</strong>에 배포."
+        },
+        {
+          "content": "각 서비스 프로젝트에서는 공통 모듈을 Maven/Gradle 의존성으로 추가하여 사용하도록 구조 변경.<br /><br />"
+        },
+        {
+          "contentTitle": "##### **성과** #####"
+        },
+        {
+          "content": "Entity 클래스 관리 포인트를 <strong style='font-weight: bold;'>중앙화하여 코드 중복 제거</strong> 및 일관성 확보."
+        },
+        {
+          "content": "Entity 변경 시 공통 모듈만 수정 및 배포하면 모든 프로젝트에 일괄 적용되어 <strong style='font-weight: bold;'>유지보수 효율성 증대</strong>."
+        },
+        {
+          "content": "수동 코드 수정 과정 제거로 <strong style='font-weight: bold;'>휴먼 에러 발생 가능성을 원천 차단</strong>하고 데이터 모델의 정합성 보장."
+        },
+        {
+          "content": "표준화된 공통 모듈 사용으로 신규 프로젝트 개발 시 생산성 향상."
+        }
+      ]
+    }
   ],
 };
 
