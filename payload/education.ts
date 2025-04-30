@@ -7,7 +7,7 @@ const education: IEducation.Payload = {
     {
       title: '국가평생교육진흥원 학점은행제',
       subTitle: '컴퓨터공학 전공(학사)',
-      startedAt: '2018-03',
+      startedAt: '2017-10',
       endedAt: '2018-03',
     },
     {
