@@ -16,7 +16,16 @@ const experience: IExperience.Payload = {
         'AWS SQS 기반 비동기 아키텍처 전환, WebClient 도입 등으로 채팅 응답 속도 수분→수초 이내로 대폭 개선',
         '기술 세미나·블로그 등 팀 내외 경험 공유로 조직 전체 기술력 향상에 기여',
       ],
-      skillKeywords: ['Java', 'Spring Boot', 'GraphQL', 'MariaDB', 'Querydsl', 'Redis', 'Docker', 'SQS'],
+      skillKeywords: [
+        'Java',
+        'Spring Boot',
+        'GraphQL',
+        'MariaDB',
+        'Querydsl',
+        'Redis',
+        'Docker',
+        'SQS',
+      ],
     },
     {
       title: '유모멘트',
