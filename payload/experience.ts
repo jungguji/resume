@@ -9,7 +9,7 @@ const experience: IExperience.Payload = {
       startedAt: '2023-04',
       endedAt: '2024-11',
       descriptions: [
-        'AI 기반 대화 서비스 "쥬씨(ZUICY)"의 메인 서버 및 분산 환경(8대) 운영/개발, 50만 가입자 트래픽 대응 아키텍처 개선',
+        'AI 기반 대화 서비스 `쥬씨(ZUICY)`의 메인 서버 및 분산 환경 운영/개발, 50만 가입자 트래픽 대응 아키텍처 개선',
         'AI Agent(LLM) 톡 기능 및 선톡(먼저 메시지 보내기) 기능 신규 개발, 사용자 리텐션 10~20%p 증가 및 재참여율 40% 달성',
         'Redis(Redisson) 분산 락 도입으로 동시성 이슈 해결, 결제/정산 시스템 데이터 무결성 확보 및 대규모 부하 테스트 검증',
         'Spring Scheduler 이중화 및 LLM API 트래픽 분산 전략으로 일 1만건 이상 메시지 안정적 생성/발송 시스템 구축',
@@ -24,7 +24,7 @@ const experience: IExperience.Payload = {
       startedAt: '2021-01',
       endedAt: '2023-04',
       descriptions: [
-        'Java Spring + JPA(Hibernate) 기반 "웨딩의 여신" 서비스 백엔드 개발 및 AWS 클라우드 운영',
+        'Java Spring + JPA(Hibernate) 기반 `웨딩의 여신` 서비스 백엔드 개발 및 AWS 클라우드 운영',
         '푸시 알림 시스템 병렬 처리·벌크 API 적용으로 19만명 대상 발송 시간 5시간→30분 이내로 90% 단축',
         'JPA Entity 공통 모듈화 및 Nexus 배포로 코드 중복 제거, 데이터 모델 일관성·생산성 향상',
         'Shell script 자동화, Slack 연동 모니터링 등 운영 효율화 및 장애 대응 체계 구축',
