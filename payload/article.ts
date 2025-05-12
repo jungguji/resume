@@ -19,9 +19,9 @@ const article: IArticle.Payload = {
         'https://jungguji.github.io/2024/11/19/%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%BD%94%EB%93%9C-%EC%9E%91%EC%84%B1%EC%9D%84-%EB%8D%94-%EC%89%BD%EA%B2%8C-with-Fixture-Monkey/',
     },
     {
-      content: '(2022. 12. 26) JPA CustomRepository 작성 시 유의사항',
+      content: '(2022. 08. 07) Nexus를 이용한 모듈화',
       href:
-        'https://jungguji.github.io/2022/12/26/JPA-CustomRepository-%EC%9E%91%EC%84%B1-%EC%8B%9C-%EC%9C%A0%EC%9D%98%EC%82%AC%ED%95%AD/',
+        'https://jungguji.github.io/2022/08/07/Nexus%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%AA%A8%EB%93%88%ED%99%94/',
     },
   ],
 };
