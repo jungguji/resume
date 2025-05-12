@@ -16,7 +16,7 @@ const experience: IExperience.Payload = {
         'AWS SQS 기반 비동기 아키텍처 전환, WebClient 도입 등으로 채팅 응답 속도 수분→수초 이내로 대폭 개선',
         '기술 세미나·블로그 등 팀 내외 경험 공유로 조직 전체 기술력 향상에 기여',
       ],
-      skillKeywords: ['Java', 'Spring Boot', 'GraphQL', 'MariaDB', 'Redis', 'Docker', 'SQS'],
+      skillKeywords: ['Java', 'Spring Boot', 'GraphQL', 'MariaDB', 'Querydsl', 'Redis', 'Docker', 'SQS'],
     },
     {
       title: '유모멘트',
@@ -30,7 +30,7 @@ const experience: IExperience.Payload = {
         'Shell script 자동화, Slack 연동 모니터링 등 운영 효율화 및 장애 대응 체계 구축',
         '레거시 서비스 개선·신규 개발, 대량 메시지 처리 등 실전 성능 최적화 경험',
       ],
-      skillKeywords: ['Java', 'Spring', 'Spring Boot', 'MySQL', 'Hibernate', 'AWS'],
+      skillKeywords: ['Java', 'Spring', 'Spring Boot', 'MySQL', 'Querydsl', 'Hibernate', 'AWS'],
     },
     {
       title: '티엔씨파트너',
