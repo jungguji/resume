@@ -1,6 +1,6 @@
 {
   "name": "resume",
-  "lastestUpdatedAt": "2025-05-12",
+  "lastestUpdatedAt": "2025-05-27",
   "version": "2.0.0",
   "description": "Static HTML based RESUME made with next.js",
   "main": "index.js",
