@@ -14,7 +14,7 @@ const project: IProject.Payload = {
             '##### 담당 역할: DB 스키마 설계, 개발, 유지보수 등 Back-end 개발 (Java, Spring Boot, MariaDB, Redis) <br /><br />',
         },
         {
-          contentTitle: '##### **문제** #####',
+          contentTitle: '##### **문제 정의** ',
         },
         {
           content:
@@ -29,7 +29,7 @@ const project: IProject.Payload = {
             "<strong style='font-weight: bold;'>wrk를 이용한 부하 테스트</strong>를 통해 개발 환경에서 해당 동시성 문제를 재현하여, 트랜잭션 커밋 전 다른 요청이 이전 데이터를 조회하여 발생하는 'Lost Update'와 유사한 상황임을 명확히 했습니다.<br /><br />",
         },
         {
-          contentTitle: '##### **해결** <br />',
+          contentTitle: '##### **주요 해결 과정 및 기여** <br />',
         },
         {
           contentTitle: '###### **[Redis 분산 락 도입]**',
@@ -73,7 +73,7 @@ const project: IProject.Payload = {
             "<strong style='font-weight: bold;'> 하단의 아티클 (동시성 이슈와 Redis Redisson를 이용한 해결방법, 동시성 제어를 위한 Redisson tryLock 메서드의 작동 원리)</strong> 이 팀 내 공유한 내용을 수정, 각색하여 포스팅한 블로그 글 입니다.<br /><br />",
         },
         {
-          contentTitle: '##### **성과** #####',
+          contentTitle: '##### **성과 및 배운 점** #####',
         },
         {
           content:
@@ -100,7 +100,7 @@ const project: IProject.Payload = {
             '##### 담당 역할: 선톡 기능 기획 참여, 백엔드 시스템 설계 및 개발 주도 (Java, Spring Boot, MariaDB, Spring Scheduler) <br /><br />',
         },
         {
-          contentTitle: '##### **문제** #####',
+          contentTitle: '##### **문제 정의** ',
         },
         {
           content:
@@ -115,7 +115,7 @@ const project: IProject.Payload = {
             '이로 인해 안정적이고 개인화된 메시지 발송에 어려움이 예상되었습니다.<br /><br />',
         },
         {
-          contentTitle: '##### **해결** <br />',
+          contentTitle: '##### **주요 해결 과정 및 기여** <br />',
         },
         {
           contentTitle: '###### **[선톡 기능 핵심 로직 설계 및 구현]**',
@@ -194,7 +194,7 @@ const project: IProject.Payload = {
             "개발 과정에서 직면한 문제와 해결 방안을 정리하여 공유함으로써 <strong style='font-weight: bold;'>후속 프로젝트의 개발 효율성 향상에 기여</strong>했습니다.<br /><br />",
         },
         {
-          contentTitle: '##### **성과** #####',
+          contentTitle: '##### **성과 및 배운 점** #####',
         },
         {
           content:
@@ -221,7 +221,7 @@ const project: IProject.Payload = {
             '##### 담당 역할: AI 챗봇 핵심 기능 개발 및 백엔드 아키텍처 개선 (Java, Spring Boot, AWS SQS, WebClient) <br /><br />',
         },
         {
-          contentTitle: '##### **문제** #####',
+          contentTitle: '##### **문제 정의** ',
         },
         {
           content:
@@ -236,7 +236,7 @@ const project: IProject.Payload = {
             "기존 동기 방식 아키텍처는 외부 LLM API 응답 대기 시 <strong style='font-weight: bold;'>블로킹 이슈를 유발</strong>하여 스케일 아웃에 명확한 한계가 있었고, 대규모 동시 요청 처리에 어려움이 있었습니다.<br /><br />",
         },
         {
-          contentTitle: '##### **해결** <br />',
+          contentTitle: '##### **주요 해결 과정 및 기여** <br />',
         },
         {
           contentTitle: '###### **[1단계: 병렬 스레드 처리를 통한 초기 응답 지연 완화]**',
@@ -280,7 +280,7 @@ const project: IProject.Payload = {
             "이 아키텍처 변경을 통해 서버와 LLM API 서버 간의 의존성을 낮추고, 서버의 스케일아웃 및 장애 격리가 가능해져 <strong style='font-weight: bold;'>대규모 트래픽을 안정적으로 처리할 수 있는 기반</strong>을 마련했습니다.<br /><br />",
         },
         {
-          contentTitle: '##### **성과** #####',
+          contentTitle: '##### **성과 및 배운 점** #####',
         },
         {
           content:
