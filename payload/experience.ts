@@ -39,7 +39,16 @@ const experience: IExperience.Payload = {
         'JSP 페이지 로딩 속도 개선',
         '전체 서비스 백엔드 개발 및 AWS 클라우드 운영',
       ],
-      skillKeywords: ['Java', 'Spring', 'Spring Boot', 'MySQL', 'Querydsl', 'Hibernate', 'AWS', 'JSP'],
+      skillKeywords: [
+        'Java',
+        'Spring',
+        'Spring Boot',
+        'MySQL',
+        'Querydsl',
+        'Hibernate',
+        'AWS',
+        'JSP',
+      ],
     },
     {
       title: '티엔씨파트너',
