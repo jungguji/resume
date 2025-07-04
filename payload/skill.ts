@@ -10,7 +10,10 @@ const backend: ISkill.Skill = {
       title: 'Spring / Spring Boot',
     },
     {
-      title: 'MySQL, MariaDB / Hibernate / Querydsl',
+      title: 'MySQL, MariaDB, Oracle, Redis, MongoDB',
+    },
+    {
+      title: 'Hibernate / Querydsl',
     },
     {
       title: 'Junit4 / 5',
