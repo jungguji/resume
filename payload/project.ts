@@ -229,11 +229,11 @@ const project: IProject.Payload = {
         },
         {
           markdownContent:
-            '- 1. 병렬 처리 도입: ThreadPoolTaskExecutor를 도입하여 푸시 발송 작업을 병렬화하고, 여러 스레드가 동시에 푸시를 발송하도록 구조 변경.',
+            '- 병렬 처리 도입: ThreadPoolTaskExecutor를 도입하여 푸시 발송 작업을 병렬화하고, 여러 스레드가 동시에 푸시를 발송하도록 구조 변경.',
         },
         {
           markdownContent:
-            '- 2. API 호출 최적화: 외부 API 문서를 분석하여 Bulk 발송 기능을 발견, 단일 호출로 최대 100건을 동시에 처리하도록 로직을 개선하여 API 호출 횟수를 획기적으로 감소시킴.<br /><br />',
+            '- API 호출 최적화: 외부 API 문서를 분석하여 Bulk 발송 기능을 발견, 단일 호출로 최대 100건을 동시에 처리하도록 로직을 개선하여 API 호출 횟수를 획기적으로 감소시킴.<br /><br />',
         },
         {
           contentTitle: '##### **[역할 및 사용 기술]** <br />',

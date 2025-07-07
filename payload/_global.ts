@@ -1,5 +1,5 @@
 import favicon from '../asset/favicon.ico';
-import previewImage from '../asset/JGJI.jpg';
+import previewImage from '../asset/JGJI_2.jpg';
 import { IGlobal } from '../component/common/IGlobal';
 
 const title = '지중구 이력서';
