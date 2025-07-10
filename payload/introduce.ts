@@ -5,16 +5,16 @@ const introduce: IIntroduce.Payload = {
   disable: false,
 
   contents: [
-    'Java & Spring / AWS 기반의 7년차 백엔드 개발자로, 기술을 맹목적으로 따르기보다, 문제의 본질을 파악하고 <strong style="font-weight: bold;">비즈니스 연속성을 보장하는 최적의 해결책</strong>을 찾아 시스템을 점진적으로 완성해 나갑니다.',
+    '7년차 백엔드 개발자로서, 비즈니스 연속성을 해치지 않는 점진적인 아키텍처 개선을 통해 실제 운영 환경의 문제를 해결합니다. 단 한 번의 완벽한 개편보다는, 상황에 맞는 최적의 기술로 시스템을 안정적으로 발전시켜 나가는 실용적인 접근 방식을 추구합니다.',
     '<br />',
     '<br />',
-    '실제 운영 환경의 병목 현상을 해결하며, 채팅 응답 속도를 <strong style="font-weight: bold;">5분에서 3초 이내로 단축</strong>하고, 19만 명 대상 푸시 발송을 <strong style="font-weight: bold;">5시간에서 30분으로 개선</strong>하는 등 극적인 성능 개선을 이끌었습니다. 이를 통해 이탈 사용자의 리텐션을 최대 <strong style="font-weight: bold;">20%p</strong>까지 끌어올리며, 기술이 비즈니스 성과로 직결됨을 증명했습니다.',
+    '<strong style="font-weight: bold;">트래픽 부하 상황에서 5분이 넘어가던 채팅 응답 시간을 3초 이내로 단축시킨 경험</strong>은, 저의 이러한 개발 철학을 가장 잘 보여주는 사례입니다. 단순히 눈앞의 성능 개선을 넘어, 긴급 대응부터 근본적인 병목 제거, 미래의 확장성을 고려한 구조 개편까지 단계적으로 시스템을 완성하며 대규모 트래픽 처리 역량을 길렀습니다. 이는 `Wavve`가 추구하는 안정적인 ‘백엔드 아키텍처 설계 및 개선’ 역량과 정확히 부합한다고 생각합니다.',
     '<br />',
     '<br />',
-    '<strong style="font-weight: bold;">유일한 백엔드 개발자</strong>로서 B2C부터 B2B, 내부 시스템까지 전 영역을 책임졌던 경험은, 어떤 상황에서도 시스템의 안정성과 데이터 무결성을 지켜내는 단단한 기반이 되었습니다.',
+    '더불어, <strong style="font-weight: bold;">Redis 분산 락을 활용해 분산 서버 환경에서 발생하는 결제 데이터의 동시성 이슈를 해결하고, 안정적인 신규 재화 시스템을 성공적으로 구축한 경험</strong>은 `Wavve`의 핵심 비즈니스의 안정성을 책임질 수 있는 저의 가장 확실한 강점입니다.',
     '<br />',
     '<br />',
-    '<strong style="font-weight: bold;">"유효한"</strong> 테스트 코드가 서비스의 품질을 결정한다고 믿으며, <a href="https://jungguji.github.io/2024/11/19/%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%BD%94%EB%93%9C-%EC%9E%91%EC%84%B1%EC%9D%84-%EB%8D%94-%EC%89%BD%EA%B2%8C-with-Fixture-Monkey/" target="_blank" rel="noopener noreferrer"> Fixture Monkey</a> 등 새로운 도구를 적극적으로 도입하여 테스트 효율을 높이는 과정을 즐깁니다. 제가 해결한 경험을 기술 블로그에 공유하며 동료와 함께 성장하는 가치를 중요하게 생각합니다.',
+    '기술을 통해 비즈니스 문제를 해결하고, 그 과정을 안정적으로 이끌어가는 개발자로 `Wavve`와 함께하고 싶습니다.'
   ],
   sign: 'Junggu Ji',
   // sign: packageJson.author.name,
