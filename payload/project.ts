@@ -65,7 +65,7 @@ const project: IProject.Payload = {
       ],
     },
     {
-      title: 'ZUICY 사용자 리텐션 증대를 위한 AI 기반 선톡(先 Talk) 기능 개발',
+      title: 'LLM API 연동을 고려한 AI 기반 선톡 메시지 발송 기능 개발 및 아키텍처 설계',
       startedAt: '2024-07',
       endedAt: '2024-08',
       where: '제네시스랩',
@@ -126,7 +126,7 @@ const project: IProject.Payload = {
       ],
     },
     {
-      title: 'ZUICY AI 챗봇 기능 개발 및 대규모 트래픽 처리 위한 시스템 개선',
+      title: 'MSA 구조를 고려한 AI 챗봇 기능 개발 및 대규모 트래픽 처리 비동기 시스템 개선',
       startedAt: '2024-06',
       endedAt: '2024-08',
       where: '제네시스랩',
