@@ -1,9 +1,9 @@
-import { Row, Col /* Alert */ } from 'reactstrap';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Row, Col, Alert } from 'reactstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { PropsWithChildren } from 'react';
 import ProfileContact from './contact';
 import ProfileImage from './image';
-// import { EmptyRowCol } from '../common';
+import { EmptyRowCol } from '../common';
 import { IProfile } from './IProfile';
 import { Style } from '../common/Style';
 import { PreProcessingComponent } from '../common/PreProcessingComponent';
@@ -20,7 +20,7 @@ export const Profile = {
 };
 
 function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
-  const { image, contact, name /* notice */ } = payload;
+  const { image, contact, name, notice, basicInfo } = payload;
   return (
     <div className="mt-5">
       <Row>
@@ -29,8 +29,9 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
         </Col>
         <Col md={9} sm={12}>
           {createNameArea(name)}
+          {basicInfo && createBasicInfoArea(basicInfo)}
           {createProfileContactMap(contact)}
-          {/* {createNoticeArea(notice)} */}
+          {createNoticeArea(notice)}
         </Col>
       </Row>
     </div>
@@ -49,7 +50,38 @@ function createNameArea(name: Payload['name']) {
   );
 }
 
+function createBasicInfoArea(basicInfo: NonNullable<Payload['basicInfo']>) {
+  return (
+    <Row className="mt-3">
+      <Col>
+        <ul style={{ listStyle: 'none', padding: 0 }}>
+          {basicInfo.map((info, index) => (
+            <li key={index} style={{ marginBottom: '8px' }}>
+              <strong>{info.label}:</strong> {info.value.split('\n').map((line, lineIndex) => (
+                <span key={lineIndex}>
+                  {lineIndex > 0 && <br />}
+                  {line.startsWith('http') ? (
+                    <a href={line} target="_blank" rel="noopener noreferrer" style={{ color: '#007bff', textDecoration: 'none' }}>
+                      {line}
+                    </a>
+                  ) : (
+                    line
+                  )}
+                </span>
+              ))}
+            </li>
+          ))}
+        </ul>
+      </Col>
+    </Row>
+  );
+}
+
 function createProfileContactMap(contacts: Payload['contact']) {
+  if (!contacts || contacts.length === 0) {
+    return null;
+  }
+  
   return (
     <Row>
       <Col className="pt-3">
@@ -61,13 +93,14 @@ function createProfileContactMap(contacts: Payload['contact']) {
   );
 }
 
-// function createNoticeArea(notice: Payload['notice']) {
-//   return (
-//     <EmptyRowCol>
-//       <Alert color="secondary" role="alert" className="mt-3">
-//         {notice.icon ? <FontAwesomeIcon className="mr-2" icon={notice.icon} /> : ''}
-//         {notice.title}
-//       </Alert>
-//     </EmptyRowCol>
-//   );
-// }
+function createNoticeArea(notice: Payload['notice']) {
+  return null;
+  // return (
+  //   <EmptyRowCol>
+  //     <Alert color="secondary" role="alert" className="mt-3">
+  //       {notice.icon ? <FontAwesomeIcon className="mr-2" icon={notice.icon} /> : ''}
+  //       {notice.title}
+  //     </Alert>
+  //   </EmptyRowCol>
+  // );
+}

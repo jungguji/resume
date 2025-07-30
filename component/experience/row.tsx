@@ -1,5 +1,5 @@
 import { DateTime } from 'luxon';
-import { PropsWithChildren } from 'react';
+import { PropsWithChildren, Fragment } from 'react';
 import { Row, Col, Badge } from 'reactstrap';
 import { IExperience } from './IExperience';
 import { Style } from '../common/Style';
@@ -21,7 +21,7 @@ export default function ExperienceRow({
           <i style={Style.gray}>{item.position}</i>
           <ul className="pt-3">
             {item.descriptions.map((description, descIndex) => (
-              <li key={descIndex.toString()}>{description}</li>
+              <li key={descIndex.toString()}>{parseMarkdownText(description)}</li>
             ))}
             {createSkillKeywords(item.skillKeywords)}
           </ul>
@@ -29,6 +29,33 @@ export default function ExperienceRow({
       </Row>
     </div>
   );
+}
+
+function parseMarkdownText(text: string) {
+  // **text** 형태의 볼드 마크다운을 파싱
+  const boldRegex = /\*\*(.*?)\*\*/g;
+  const parts = [];
+  let lastIndex = 0;
+  let match;
+
+  while ((match = boldRegex.exec(text)) !== null) {
+    // 매치 이전의 일반 텍스트 추가
+    if (match.index > lastIndex) {
+      parts.push(text.slice(lastIndex, match.index));
+    }
+    
+    // 볼드 텍스트 추가
+    parts.push(<strong key={`bold-${match.index}`} style={{ fontWeight: 'bold' }}>{match[1]}</strong>);
+    
+    lastIndex = boldRegex.lastIndex;
+  }
+
+  // 마지막 남은 텍스트 추가
+  if (lastIndex < text.length) {
+    parts.push(text.slice(lastIndex));
+  }
+
+  return parts.length === 1 && typeof parts[0] === 'string' ? parts[0] : <Fragment>{parts}</Fragment>;
 }
 
 function createSkillKeywords(skillKeywords?: string[]) {

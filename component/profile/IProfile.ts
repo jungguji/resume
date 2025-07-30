@@ -21,6 +21,8 @@ export declare namespace IProfile {
       /** ### 이름 옆 괄호로 작게 표시해주는 이름 */
       small?: string;
     };
+    /** ### 기본 정보 목록 */
+    basicInfo?: BasicInfo[];
     /** ### 연락 수단 목록 */
     contact: Contact[];
     /** ### 공지 */
@@ -35,6 +37,16 @@ export declare namespace IProfile {
        */
       icon?: IconDefinition;
     };
+  }
+
+  /**
+   * ### 기본 정보 인터페이스
+   */
+  interface BasicInfo {
+    /** ### 라벨 */
+    label: string;
+    /** ### 값 */
+    value: string;
   }
 
   /**
