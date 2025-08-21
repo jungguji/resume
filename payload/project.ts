@@ -4,6 +4,72 @@ const project: IProject.Payload = {
   disable: false,
   list: [
     {
+      title: 'ZUICY AI 챗봇 기능 개발 및 대규모 트래픽 처리 위한 시스템 개선',
+      startedAt: '2024-06',
+      endedAt: '2024-08',
+      where: '제네시스랩',
+      descriptions: [
+        {
+          contentTitle: '##### **[주요 성과]** <br />',
+        },
+        {
+          content:
+            '동기 블로킹 구조를 개선하여, 5분 이상 소요되던 채팅 평균 응답 속도를 3초 이내로 단축시켜서 응답 속도를 최대 `99%` 이상 단축',
+        },
+        {
+          content: '분당 1만 건의 요청 처리를 목표로 시스템을 설계했으며, 실제 운영 환경의 피크타임에 발생한 분당 6,000건의 요청을 지연 없이 안정적으로 처리하며 목표 처리량을 성공적으로 입증.',
+        }
+        {
+          content:
+            'AWS SQS 기반의 아키텍처 전환을 통해, 대규모 사용자 요청에도 장애 없이 유연하게 확장 가능한 MSA 시스템의 기반을 마련.',
+        },
+        {
+          content:
+            '심각한 성능 저하로 인한 사용자 이탈 위기를 해결하고, 핵심 기능의 `비즈니스 연속성`을 성공적으로 확보함.<br /><br />',
+        },
+        {
+          contentTitle: '##### **[문제 상황 및 해결 과정]** <br />',
+        },
+        {
+          content: '<strong style="font-weight: bold;">문제:</strong>',
+        },
+        {
+          markdownContent:
+            '- AI 챗봇 기능 출시 후 사용자 급증으로 채팅 응답 지연(최대 5분 이상) 발생.',
+        },
+        {
+          markdownContent:
+            '- 기존 동기 방식 아키텍처의 블로킹 이슈로 인해 시스템 확장(Scale-out)에 명확한 한계 존재.<br /><br />',
+        },
+        {
+          content:
+            '<strong style="font-weight: bold;">해결: 비즈니스 연속성을 고려한 3단계 점진적 아키텍처 개선</strong>',
+        },
+        {
+          markdownContent:
+            '- 1단계 (긴급 대응): 평소 익숙한 기술인 ThreadPoolTaskExecutor와 CompletableFuture를 활용한 병렬 처리로 외부 API 호출 병목을 즉시 완화하여 초기 서비스 안정성 확보.',
+        },
+        {
+          markdownContent:
+            '- 2단계 (병목 제거): 논블로킹 I/O를 지원하는 WebClient로 전환하여 스레드 블로킹 이슈를 근본적으로 해결하고 시스템 처리량 증대.',
+        },
+        {
+          markdownContent:
+            '- 3단계 (구조 개편): 서버 분리 및 AWS SQS 기반의 완전 비동기 아키텍처로 전면 개편. 서버 간 의존성을 제거하고, 유연한 확장성과 장애 격리가 가능한 MSA 기반 구조로 시스템 완성.<br /><br />',
+        },
+        {
+          contentTitle: '##### **[역할 및 사용 기술]** <br />',
+        },
+        {
+          content: '역할: 백엔드 아키텍처 개선 설계 및 점진적 전환 프로젝트 주도',
+        },
+        {
+          content:
+            '사용 기술: Java, Spring Boot, CompletableFuture, WebClient, AWS SQS <br /><br />',
+        },
+      ],
+    },
+    {
       title: 'ZUICY 톡 기능용 신규 재화 시스템 개발',
       startedAt: '2024-08',
       endedAt: '2024-09',
@@ -122,69 +188,6 @@ const project: IProject.Payload = {
         {
           content:
             '사용 기술: Java, Spring Boot, Spring Scheduler, MariaDB, Hibernate, QueryDSL, 외부 API 연동 <br /><br />',
-        },
-      ],
-    },
-    {
-      title: 'ZUICY AI 챗봇 기능 개발 및 대규모 트래픽 처리 위한 시스템 개선',
-      startedAt: '2024-06',
-      endedAt: '2024-08',
-      where: '제네시스랩',
-      descriptions: [
-        {
-          contentTitle: '##### **[주요 성과]** <br />',
-        },
-        {
-          content:
-            '동기 블로킹 구조를 개선하여, 5분 이상 소요되던 채팅 평균 응답 속도를 3초 이내로 단축시켜서 응답 속도를 최대 `99%` 이상 단축',
-        },
-        {
-          content:
-            '기존 시스템을 AWS SQS 기반의 완전 비동기 아키텍처로 전환하여, 대규모 사용자 요청에도 장애 없이 확장 가능한 시스템 기반 마련.',
-        },
-        {
-          content:
-            '심각한 성능 저하로 인한 사용자 이탈 위기를 해결하고, 핵심 기능의 `비즈니스 연속성`을 성공적으로 확보함.<br /><br />',
-        },
-        {
-          contentTitle: '##### **[문제 상황 및 해결 과정]** <br />',
-        },
-        {
-          content: '<strong style="font-weight: bold;">문제:</strong>',
-        },
-        {
-          markdownContent:
-            '- AI 챗봇 기능 출시 후 사용자 급증으로 채팅 응답 지연(최대 5분 이상) 발생.',
-        },
-        {
-          markdownContent:
-            '- 기존 동기 방식 아키텍처의 블로킹 이슈로 인해 시스템 확장(Scale-out)에 명확한 한계 존재.<br /><br />',
-        },
-        {
-          content:
-            '<strong style="font-weight: bold;">해결: 비즈니스 연속성을 고려한 3단계 점진적 아키텍처 개선</strong>',
-        },
-        {
-          markdownContent:
-            '- 1단계 (긴급 대응): 평소 익숙한 기술인 ThreadPoolTaskExecutor와 CompletableFuture를 활용한 병렬 처리로 외부 API 호출 병목을 즉시 완화하여 초기 서비스 안정성 확보.',
-        },
-        {
-          markdownContent:
-            '- 2단계 (병목 제거): 논블로킹 I/O를 지원하는 WebClient로 전환하여 스레드 블로킹 이슈를 근본적으로 해결하고 시스템 처리량 증대.',
-        },
-        {
-          markdownContent:
-            '- 3단계 (구조 개편): 서버 분리 및 AWS SQS 기반의 완전 비동기 아키텍처로 전면 개편. 서버 간 의존성을 제거하고, 유연한 확장성과 장애 격리가 가능한 MSA 기반 구조로 시스템 완성.<br /><br />',
-        },
-        {
-          contentTitle: '##### **[역할 및 사용 기술]** <br />',
-        },
-        {
-          content: '역할: 백엔드 아키텍처 개선 설계 및 점진적 전환 프로젝트 주도',
-        },
-        {
-          content:
-            '사용 기술: Java, Spring Boot, CompletableFuture, WebClient, AWS SQS <br /><br />',
         },
       ],
     },
