@@ -21,11 +21,11 @@ export default function ExperienceRow({
           <h4>{item.title}</h4>
           <i style={Style.gray}>{item.position}</i>
           <ul className="pt-3">
-          {/* {item.descriptions.map((description, descIndex) => (
+            {/* {item.descriptions.map((description, descIndex) => (
               <li key={descIndex.toString()}>{description}</li>
             ))} */}
-            {item.descriptions.map((description, descIndex) => 
-              createMarkdownDescription(description, descIndex)
+            {item.descriptions.map((description, descIndex) =>
+              createMarkdownDescription(description, descIndex),
             )}
             {createSkillKeywords(item.skillKeywords)}
           </ul>
