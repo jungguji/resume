@@ -1,6 +1,7 @@
 import { DateTime } from 'luxon';
 import { PropsWithChildren } from 'react';
 import { Row, Col, Badge } from 'reactstrap';
+import Markdown from 'markdown-to-jsx';
 import { IExperience } from './IExperience';
 import { Style } from '../common/Style';
 import Util from '../common/Util';
@@ -20,14 +21,37 @@ export default function ExperienceRow({
           <h4>{item.title}</h4>
           <i style={Style.gray}>{item.position}</i>
           <ul className="pt-3">
-            {item.descriptions.map((description, descIndex) => (
+          {/* {item.descriptions.map((description, descIndex) => (
               <li key={descIndex.toString()}>{description}</li>
-            ))}
+            ))} */}
+            {item.descriptions.map((description, descIndex) => 
+              createMarkdownDescription(description, descIndex)
+            )}
             {createSkillKeywords(item.skillKeywords)}
           </ul>
         </Col>
       </Row>
     </div>
+  );
+}
+
+function createMarkdownDescription(description: string, descIndex: number) {
+  return (
+    <li key={descIndex.toString()}>
+      <Markdown
+        options={{
+          overrides: {
+            strong: {
+              props: {
+                style: Style.strongText,
+              },
+            },
+          },
+        }}
+      >
+        {description}
+      </Markdown>
+    </li>
   );
 }
 
