@@ -4,6 +4,11 @@ const article: IArticle.Payload = {
   disable: false,
   list: [
     {
+      content: '(2025. 08. 24) 정의로운 코드: 플라톤의 정의론과 소프트웨어 개발의 철학적 탐구',
+      href: 
+        'https://jungguji.github.io/2025/08/24/%EC%A0%95%EC%9D%98%EB%A1%9C%EC%9A%B4-%EC%BD%94%EB%93%9C-%ED%94%8C%EB%9D%BC%ED%86%A4%EC%9D%98-%EC%A0%95%EC%9D%98%EB%A1%A0%EA%B3%BC-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EA%B0%9C%EB%B0%9C%EC%9D%98-%EC%B2%A0%ED%95%99%EC%A0%81-%ED%83%90%EA%B5%AC/',
+    },
+    {
       content: '(2025. 01. 09) 동시성 제어를 위한 Redisson tryLock 메서드의 작동 원리',
       href:
         'https://jungguji.github.io/2025/01/09/%EB%8F%99%EC%8B%9C%EC%84%B1-%EC%A0%9C%EC%96%B4%EB%A5%BC-%EC%9C%84%ED%95%9C-Redisson-tryLock-%EB%A9%94%EC%84%9C%EB%93%9C%EC%9D%98-%EC%9E%91%EB%8F%99-%EC%9B%90%EB%A6%AC',

@@ -25,7 +25,7 @@ const backend: ISkill.Skill = {
 };
 
 const devOps: ISkill.Skill = {
-  category: 'DevOps',
+  category: 'Infra',
   items: [
     {
       title: 'AWS EC2',
