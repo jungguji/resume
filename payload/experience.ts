@@ -5,7 +5,7 @@ const experience: IExperience.Payload = {
   list: [
     {
       title: '제네시스랩',
-      position: 'Server Back-end Developer',
+      position: '백엔드 개발팀, 매니저',
       startedAt: '2023-04',
       endedAt: '2024-11',
       descriptions: [
@@ -28,7 +28,7 @@ const experience: IExperience.Payload = {
     },
     {
       title: '유모멘트',
-      position: 'Server Back-end Developer',
+      position: '온라인 사업팀, 매니저',
       startedAt: '2021-01',
       endedAt: '2023-04',
       descriptions: [
@@ -51,7 +51,7 @@ const experience: IExperience.Payload = {
     },
     {
       title: '티엔씨파트너',
-      position: 'Java Developer',
+      position: '개발 2팀, 대리',
       startedAt: '2016-09',
       endedAt: '2019-06',
       descriptions: [

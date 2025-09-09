@@ -40,15 +40,15 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
             </span>
           ))}
           <p className="text-right">
-            <small>Latest Updated</small>{' '}
+            {/* <small>Latest Updated</small>{' '}
             <Badge color="secondary">
               {`${latestUpdated.toFormat(
                 Util.LUXON_DATE_FORMAT.YYYY_DOT_LL_DOT_DD,
               )} (D+${latestUpdatedByNow})`}
-            </Badge>
+            </Badge> */}
           </p>
           <p className="text-right" style={Style.sign}>
-            {payload.sign}
+            {/* {payload.sign} */}
           </p>
         </Col>
       </Row>
