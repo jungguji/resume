@@ -20,9 +20,9 @@ const profile: IProfile.Payload = {
       icon: faEnvelope,
     },
     {
-      title: 'Please contact me by email',
+      title: '010-9146-6508',
+      link: '#',
       icon: faPhone,
-      badge: true,
     },
     {
       title: 'https://github.com/jungguji',
