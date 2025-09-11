@@ -269,7 +269,7 @@ const project: IProject.Payload = {
         },
         {
           content:
-            '수동 동기화 작업을 자동화된 빌드/배포 프로세스로 대체하여, 프로젝트 간 데이터 모델 불일치로 인한 장애 발생 가능성을 `0%`로 제거.<br /><br />',
+            '수동 동기화 작업을 모듈화된 JAR로 대체하여, 프로젝트 간 데이터 모델 불일치로 인한 장애 발생 가능성을 `0%`로 제거.<br /><br />',
         },
         {
           contentTitle: '##### **[문제 상황 및 해결 과정]** <br />',
@@ -294,7 +294,7 @@ const project: IProject.Payload = {
         },
         {
           markdownContent:
-            '- 모듈을 JAR 파일로 빌드하여 사내 Nexus Repository를 통해 버전 관리 및 배포를 자동화하는 인프라 구축.',
+            '- 모듈을 JAR 파일로 빌드하여 사내 Nexus Repository를 통해 버전 관리 및 배포 인프라 구축.',
         },
         {
           markdownContent:
