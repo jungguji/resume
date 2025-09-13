@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "NODE_OPTIONS=--openssl-legacy-provider next",
+    "dev": "next",
     "build": "NODE_OPTIONS=--openssl-legacy-provider next build",
     "prebuild": "npm install && npm run lint",
     "start": "NODE_OPTIONS=--openssl-legacy-provider next start",
