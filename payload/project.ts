@@ -10,6 +10,12 @@ const project: IProject.Payload = {
       where: '제네시스랩',
       descriptions: [
         {
+          contentTitle: '##### **[Mission]** <br />',
+        },
+        {
+          contentTitle: '급증한 트래픽으로 붕괴 직전인 AI 챗봇의 응답 성능을 개선하여 핵심 기능의 안정성을 확보하고 사용자 이탈을 방지 <br /><br />'
+        },
+        {
           contentTitle: '##### **[주요 성과]** <br />',
         },
         {
