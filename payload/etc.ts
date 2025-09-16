@@ -1,25 +1,25 @@
 import { IEtc } from '../component/etc/IEtc';
 
 const etc: IEtc.Payload = {
-  disable: true,
+  disable: false,
 
   list: [
     {
-      title: 'Capstone Design Contest',
-      subTitle: 'Grand Prize',
-      startedAt: '2015-05',
+      title: '병역사항',
+      subTitle: '육군 병장 만기제대',
+      startedAt: '2013-04',
+      endedAt: '2015-01',
     },
     {
-      title: 'IT Education Service Activities',
-      subTitle: 'Wrold Friends IT Volunteer',
-      startedAt: '2013-07',
-      endedAt: '2013-08',
+      title: '자격사항',
+      subTitle: '정보처리산업기사 (한국산업인력공단)',
+      startedAt: '2016-05',
     },
     {
-      title: 'Information Olympiad',
-      subTitle: 'Silver Prize',
-      startedAt: '2008-05',
-    },
+      title: '자격사항',
+      subTitle: '컴퓨터활용능력 1급 (대한상공회의소)',
+      startedAt: '2011-05',
+    }
   ],
 };
 
