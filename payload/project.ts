@@ -13,7 +13,7 @@ const project: IProject.Payload = {
           contentTitle: '##### **[Mission]** <br />',
         },
         {
-          contentTitle: '급증한 트래픽으로 붕괴 직전인 AI 챗봇의 응답 성능을 개선하여 핵심 기능의 안정성을 확보하고 사용자 이탈을 방지 <br /><br />'
+          contentTitle: '급증한 트래픽으로 급격히 지연된 AI 챗봇의 응답 성능을 개선하여 핵심 기능의 안정성을 확보하고 사용자 이탈을 방지 <br /><br />'
         },
         {
           contentTitle: '##### **[주요 성과]** <br />',
@@ -83,6 +83,12 @@ const project: IProject.Payload = {
       where: '제네시스랩',
       descriptions: [
         {
+          contentTitle: '##### **[Mission]** <br />',
+        },
+        {
+          contentTitle: '신규 비즈니스 모델(BM)의 핵심인 유료 결제 시스템을 구축하며, 분산 환경의 동시성 이슈를 해결하여 데이터 무결성을 100% 보장 <br /><br />'
+        },
+        {
           contentTitle: '##### **[주요 성과]** <br />',
         },
         {
@@ -107,22 +113,30 @@ const project: IProject.Payload = {
         },
         {
           content:
-            '<strong style="font-weight: bold;">문제:</strong> 신규 유료 기능 도입 시, 분산 서버(8대) 환경에서 동시 결제 요청이 발생하면 데이터가 누락되는 치명적 오류 발생.',
+            '<strong style="font-weight: bold;">문제:</strong> ',
+        },
+        {
+          markdownContent:
+            '- 기술적 문제: 분산 서버(8대) 환경에서 동시 결제 요청 시 데이터가 누락되는 치명적인 동시성 오류 발생.'
+        },
+        {
+          markdownContent:
+            '- 비즈니스 문제: 정산의 정확성을 위해, 성격이 다른 재화(\'무료/유료 캐시\')가 함께 사용되는 복합 결제를 포함한 모든 거래 내역을 추적하고 데이터 무결성을 보장해야 하는 복잡성이 존재.'
         },
         {
           content: '<strong style="font-weight: bold;">해결:</strong> ',
         },
         {
           markdownContent:
-            '- Redis 기반의 Redisson 분산 락(tryLock)을 도입하여 임계 영역(재화의 동시사용)의 동시 접근을 제어.',
+            '- 동시성 제어: Redis 기반의 Redisson으로 분산 락을 도입하여, 여러 서버에서 재화를 동시에 사용하는 임계 영역(Critical Section)의 동시 접근을 원천적으로 제어.',
         },
         {
           markdownContent:
-            '- 모든 재화 거래(생성, 사용, 소멸, 환불)를 기록하는 정책을 설계하여 데이터 무결성 및 추적성 확보.',
+            '- 데이터 무결성 및 추적성 확보: 모든 재화 거래(생성, 사용, 소멸, 환불)의 상세 내역을 추적할 수 있는 정책과 DB 스키마를 설계하여, 복합 결제 시에도 정산의 투명성을 완벽하게 확보.',
         },
         {
           markdownContent:
-            '- 사업/재무팀과 협업하여 재화 정책을 수립하고 기술적 제약사항을 공유하며 효율적 의사결정 지원.<br /><br />',
+            '- 협업을 통한 정책 구체화: 사업/재무팀과 긴밀하게 협업하여 복잡한 재화 정책을 수립하고 기술적 제약사항을 공유하며 효율적인 의사결정 지원.<br /><br />',
         },
         {
           contentTitle: '##### **[역할 및 사용 기술]** <br />',
@@ -143,6 +157,12 @@ const project: IProject.Payload = {
       endedAt: '2024-08',
       where: '제네시스랩',
       descriptions: [
+        {
+          contentTitle: '##### **[Mission]** <br />',
+        },
+        {
+          contentTitle: '사용자 리텐션 증대라는 비즈니스 목표 달성을 위해, 시스템 부하와 API 비용을 최소화하는 효율적인 비동기 메시지 발송 시스템 설계 및 구축 <br /><br />'
+        },
         {
           contentTitle: '##### **[주요 성과]** <br />',
         },
@@ -205,6 +225,12 @@ const project: IProject.Payload = {
       where: '유모멘트',
       descriptions: [
         {
+          contentTitle: '##### **[Mission]** <br />',
+        },
+        {
+          contentTitle: '5시간 이상 소요되던 레거시 푸시 시스템의 병목을 해결하고, 타임딜과 같은 시의성 있는 마케팅 활동을 가능하게 하여 새로운 비즈니스 기회를 창출 <br /><br />'
+        },
+        {
           contentTitle: '##### **[주요 성과]** <br />',
         },
         {
@@ -262,6 +288,12 @@ const project: IProject.Payload = {
       endedAt: '2022-08',
       where: '웨딩의 여신',
       descriptions: [
+        {
+          contentTitle: '##### **[Mission]** <br />',
+        },
+        {
+          contentTitle: '반복적인 수동 작업을 제거하고 휴먼 에러를 원천 차단하는 공통 모듈을 구축하여, 팀의 개발 생산성을 극대화하고 시스템 전체의 안정성을 확보 <br /><br />'
+        },
         {
           contentTitle: '##### **[주요 성과]** <br />',
         },
