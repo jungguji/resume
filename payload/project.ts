@@ -13,7 +13,8 @@ const project: IProject.Payload = {
           contentTitle: '##### **[Mission]** <br />',
         },
         {
-          contentTitle: '급증한 트래픽으로 급격히 지연된 AI 챗봇의 응답 성능을 개선하여 핵심 기능의 안정성을 확보하고 사용자 이탈을 방지 <br /><br />'
+          contentTitle:
+            '급증한 트래픽으로 급격히 지연된 AI 챗봇의 응답 성능을 개선하여 핵심 기능의 안정성을 확보하고 사용자 이탈을 방지 <br /><br />',
         },
         {
           contentTitle: '##### **[주요 성과]** <br />',
@@ -86,7 +87,8 @@ const project: IProject.Payload = {
           contentTitle: '##### **[Mission]** <br />',
         },
         {
-          contentTitle: '신규 비즈니스 모델(BM)의 핵심인 유료 결제 시스템을 구축하며, 분산 환경의 동시성 이슈를 해결하여 데이터 무결성을 100% 보장 <br /><br />'
+          contentTitle:
+            '신규 비즈니스 모델(BM)의 핵심인 유료 결제 시스템을 구축하며, 분산 환경의 동시성 이슈를 해결하여 데이터 무결성을 100% 보장 <br /><br />',
         },
         {
           contentTitle: '##### **[주요 성과]** <br />',
@@ -112,16 +114,15 @@ const project: IProject.Payload = {
           contentTitle: '##### **[문제 상황 및 해결 과정]** <br />',
         },
         {
-          content:
-            '<strong style="font-weight: bold;">문제:</strong> ',
+          content: '<strong style="font-weight: bold;">문제:</strong> ',
         },
         {
           markdownContent:
-            '- 기술적 문제: 분산 서버(8대) 환경에서 동시 결제 요청 시 데이터가 누락되는 치명적인 동시성 오류 발생.'
+            '- 기술적 문제: 분산 서버(8대) 환경에서 동시 결제 요청 시 데이터가 누락되는 치명적인 동시성 오류 발생.',
         },
         {
           markdownContent:
-            '- 비즈니스 문제: 정산의 정확성을 위해, 성격이 다른 재화(\'무료/유료 캐시\')가 함께 사용되는 복합 결제를 포함한 모든 거래 내역을 추적하고 데이터 무결성을 보장해야 하는 복잡성이 존재.'
+            "- 비즈니스 문제: 정산의 정확성을 위해, 성격이 다른 재화('무료/유료 캐시')가 함께 사용되는 복합 결제를 포함한 모든 거래 내역을 추적하고 데이터 무결성을 보장해야 하는 복잡성이 존재.",
         },
         {
           content: '<strong style="font-weight: bold;">해결:</strong> ',
@@ -161,7 +162,8 @@ const project: IProject.Payload = {
           contentTitle: '##### **[Mission]** <br />',
         },
         {
-          contentTitle: '사용자 리텐션 증대라는 비즈니스 목표 달성을 위해, 시스템 부하와 API 비용을 최소화하는 효율적인 비동기 메시지 발송 시스템 설계 및 구축 <br /><br />'
+          contentTitle:
+            '사용자 리텐션 증대라는 비즈니스 목표 달성을 위해, 시스템 부하와 API 비용을 최소화하는 효율적인 비동기 메시지 발송 시스템 설계 및 구축 <br /><br />',
         },
         {
           contentTitle: '##### **[주요 성과]** <br />',
@@ -228,7 +230,8 @@ const project: IProject.Payload = {
           contentTitle: '##### **[Mission]** <br />',
         },
         {
-          contentTitle: '5시간 이상 소요되던 레거시 푸시 시스템의 병목을 해결하고, 타임딜과 같은 시의성 있는 마케팅 활동을 가능하게 하여 새로운 비즈니스 기회를 창출 <br /><br />'
+          contentTitle:
+            '5시간 이상 소요되던 레거시 푸시 시스템의 병목을 해결하고, 타임딜과 같은 시의성 있는 마케팅 활동을 가능하게 하여 새로운 비즈니스 기회를 창출 <br /><br />',
         },
         {
           contentTitle: '##### **[주요 성과]** <br />',
@@ -292,7 +295,8 @@ const project: IProject.Payload = {
           contentTitle: '##### **[Mission]** <br />',
         },
         {
-          contentTitle: '반복적인 수동 작업을 제거하고 휴먼 에러를 원천 차단하는 공통 모듈을 구축하여, 팀의 개발 생산성을 극대화하고 시스템 전체의 안정성을 확보 <br /><br />'
+          contentTitle:
+            '반복적인 수동 작업을 제거하고 휴먼 에러를 원천 차단하는 공통 모듈을 구축하여, 팀의 개발 생산성을 극대화하고 시스템 전체의 안정성을 확보 <br /><br />',
         },
         {
           contentTitle: '##### **[주요 성과]** <br />',
