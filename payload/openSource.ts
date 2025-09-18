@@ -30,7 +30,7 @@ const openSource: IOpenSource.Payload = {
         { content: 'Summary: 개인 건강 상태의 체계적인 기록 및 관리를 목표로 하는 RESTful API 서버 개발' },
         {
           content:
-            'Key Contributions:',
+            'Key Features:',
         },
         {
           markdownContent:
