@@ -14,6 +14,7 @@ import { Presentation } from '../component/presentation';
 import { Profile } from '../component/profile';
 import { Project } from '../component/project';
 import { Skill } from '../component/skill';
+import { Summary } from '../component/summary'; // Added: Summary component import
 import { Style } from '../component/common/Style';
 import Payload from '../payload';
 import { Article } from '../component/article';
@@ -28,7 +29,8 @@ function Yosume() {
       </Head>
       <Container style={Style.global}>
         <Profile.Component payload={Payload.profile} />
-        <Introduce.Component payload={Payload.introduce} />
+        <Summary.Component payload={Payload.summary} /> {/* Added: Summary section rendering */}
+        {/* <Introduce.Component payload={Payload.introduce} /> */}
         {/* <Motivation.Component payload={Payload.introduce} /> */}
         <Experience.Component payload={Payload.experience} />
         <Project.Component payload={Payload.project} />

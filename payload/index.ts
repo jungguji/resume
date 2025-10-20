@@ -1,5 +1,6 @@
 import profile from './profile';
 import introduce from './introduce';
+import summary from './summary'; // Added: Summary section import
 import skill from './skill';
 import experience from './experience';
 import openSource from './openSource';
@@ -14,6 +15,7 @@ import { _global } from './_global';
 
 import { IProfile } from '../component/profile/IProfile';
 import { IIntroduce } from '../component/introduce/IIntroduce';
+import { ISummary } from '../component/summary/ISummary'; // Added: Summary type import
 import { ISkill } from '../component/skill/ISkill';
 import { IOpenSource } from '../component/openSource/IOpenSource';
 import { IExperience } from '../component/experience/IExperience';
@@ -28,6 +30,7 @@ import { IArticle } from '../component/article/IArticle';
 const Payload: Payload = {
   profile,
   introduce,
+  summary, // Added: Summary section data
   skill,
   openSource,
   experience,
@@ -44,6 +47,7 @@ const Payload: Payload = {
 interface Payload {
   profile: IProfile.Payload;
   introduce: IIntroduce.Payload;
+  summary: ISummary.Payload; // Added: Summary section type
   skill: ISkill.Payload;
   openSource: IOpenSource.Payload;
   experience: IExperience.Payload;
