@@ -24,6 +24,13 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
           <h2 style={Style.blue}>SUMMARY</h2>
         </Col>
         <Col sm={12} md={9}>
+          {/* subtitle 추가: experience의 title과 유사한 형태 */}
+          {payload.subTitle && (
+            <h5 style={{ fontWeight: 500, marginBottom: '0.5rem' }}>
+              {payload.subTitle}
+            </h5>
+          )}
+          {/* 기존 bullet points */}
           <ul style={{ marginTop: 0, paddingLeft: '1.2rem', listStyleType: 'disc' }}>
             {payload.contents.map((content, index) => (
               <li
