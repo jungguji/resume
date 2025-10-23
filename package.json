@@ -1,12 +1,12 @@
 {
   "name": "resume",
-  "lastestUpdatedAt": "2025-10-20",
+  "lastestUpdatedAt": "2025-10-23",
   "version": "2.0.0",
   "description": "Static HTML based RESUME made with next.js",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "next",
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider next",
     "build": "next build",
     "prebuild": "npm install && npm run lint",
     "start": "next start",
