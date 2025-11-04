@@ -30,7 +30,7 @@ function Yosume() {
       <Container style={Style.global}>
         <Profile.Component payload={Payload.profile} />
         <Summary.Component payload={Payload.summary} /> {/* Added: Summary section rendering */}
-        {/* <Introduce.Component payload={Payload.introduce} /> */}
+        <Introduce.Component payload={Payload.introduce} />
         {/* <Motivation.Component payload={Payload.introduce} /> */}
         <Experience.Component payload={Payload.experience} />
         <Project.Component payload={Payload.project} />
