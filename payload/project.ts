@@ -283,6 +283,21 @@ const project: IProject.Payload = {
         {
           content: '사용 기술: Java, Spring, 외부 Push Service API 연동 <br /><br />',
         },
+        {
+          contentTitle: '##### **[기술 회고: 아키텍처 고도화 연구]** <br />',
+        },
+        {
+          content:
+            '기존 한계 분석: 당시 스레드 풀 방식의 `확장성 제한(Vertical Scaling)`과 `초장기 트랜잭션 및 DB 병목`과 여전한 `강한 결합도`',
+        },
+        {
+          content:
+            '차세대 아키텍처 설계: `Outbox Pattern`과 `Message Queue`를 결합하여 트랜잭션 보장 및 결합도 제거. \'SELECT FOR UPDATE SKIP LOCKED\'를 활용한 동시성 제어 및 안전한 분산 처리 구현. \'Thundering Herd\' 방지를 위한 발송 속도 제어(Rate Limiting) 전략 수립.',
+        },
+        {
+          content:
+            '상세 연구 내용: <a href="https://jungguji.github.io/2025/11/11/%EB%8C%80%EA%B7%9C%EB%AA%A8-%ED%91%B8%EC%8B%9C-%EC%95%8C%EB%A6%BC-%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%9D%98-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%EA%B0%9C%EC%84%A0%EC%97%90-%EA%B4%80%ED%95%9C-%EC%97%B0%EA%B5%AC/" target="_blank" rel="noopener noreferrer">대규모 푸시 알림 시스템의 아키텍처 개선에 관한 연구</a>',
+        },
       ],
     },
     {

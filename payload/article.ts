@@ -4,6 +4,11 @@ const article: IArticle.Payload = {
   disable: false,
   list: [
     {
+      content: '(2025. 11. 24) 대규모 푸시 알림 시스템의 아키텍처 개선에 관한 연구',
+      href:
+        'https://jungguji.github.io/2025/11/11/%EB%8C%80%EA%B7%9C%EB%AA%A8-%ED%91%B8%EC%8B%9C-%EC%95%8C%EB%A6%BC-%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%9D%98-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%EA%B0%9C%EC%84%A0%EC%97%90-%EA%B4%80%ED%95%9C-%EC%97%B0%EA%B5%AC/'
+    },
+    {
       content: '(2025. 08. 24) 정의로운 코드: 플라톤의 정의론과 소프트웨어 개발의 철학적 탐구',
       href:
         'https://jungguji.github.io/2025/08/24/%EC%A0%95%EC%9D%98%EB%A1%9C%EC%9A%B4-%EC%BD%94%EB%93%9C-%ED%94%8C%EB%9D%BC%ED%86%A4%EC%9D%98-%EC%A0%95%EC%9D%98%EB%A1%A0%EA%B3%BC-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EA%B0%9C%EB%B0%9C%EC%9D%98-%EC%B2%A0%ED%95%99%EC%A0%81-%ED%83%90%EA%B5%AC/',
