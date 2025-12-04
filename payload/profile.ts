@@ -1,4 +1,4 @@
-import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faPhone, faDollarSign } from '@fortawesome/free-solid-svg-icons';
 import { faBell } from '@fortawesome/free-regular-svg-icons';
 import { faGithub, faBloggerB } from '@fortawesome/free-brands-svg-icons';
 import image from '../asset/JGJI_2.jpg';
@@ -34,6 +34,11 @@ const profile: IProfile.Payload = {
       link: 'https://jungguji.github.io/',
       icon: faBloggerB,
     },
+    {
+      title: '희망연봉: 5,700만원 ( 협의 가능 )',
+      icon: faDollarSign,
+      badge: true,
+    }
   ],
   notice: {
     title: '문의사항은 Email로 부탁드립니다. 감사합니다.',
